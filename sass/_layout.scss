@@ -1,0 +1,340 @@
+.navbar {
+    background: #4a76a8;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 55px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .navbar_left{
+            width: calc(100%/4);
+            .navbar_geri{
+                display: none;
+                text-align: center;
+                width: 40px;
+                img{
+                    width: 22px;
+                }
+            }
+            .navbar_menu{
+                display: none;
+                text-align: center;
+                width: 40px;
+                img{
+                    width: 22px;
+                }
+            }
+            .logo_navbar{
+                a {
+                    font-family: 'Titan One', cursive;
+                    margin-left: 17%;
+                    letter-spacing: 10px;
+                    color: white;
+                }
+            }
+        }
+        .navbar_center{
+            width: calc(100%/3);
+                .logo_navbar_mobile{
+                    display: none;
+                }
+                .search_navbar {
+                    background-color: white;  
+                    border-radius: 10px;  
+                    width: 100%;                                                                        
+                    img {
+                        margin-bottom: 2px;
+                        width: 16px;
+                        margin-left: 5px;
+                    }
+                    input {
+                        width: 85%;
+                        border-width: 0px;
+                        font-size: 14px;
+                        color: gray;
+                    }
+                    input:focus {
+                        outline: none;
+                    }
+                    input::placeholder {
+                        color: #b0acac;
+                    }
+                }
+        }
+        .navbar_right{
+            width: calc(100%/4);
+            .navbar_mobile_right{
+                display: none;
+                .dropdown{
+                    vertical-align: middle;
+                    display: none;
+                    text-align: center;
+                    width: 40px;
+                    #dropdownclick{
+                        width: 22px;
+                        height: 22px;
+                        position: relative;
+                    }
+                    span{
+                        position: absolute;
+                        display: block;
+                        width: 4px;
+                        height: 4px;
+                        background: red;
+                        border-radius: 50%;
+                        top: 18px;
+                        left: 18px;
+                    }
+                    #dropupclick{
+                        width: 22px;
+                        height: 22px;
+                        display: none;
+                    }
+                }
+                .navbar_dots {
+                    text-align: center;
+                    width: 40px;
+                    position: relative;
+                    display: none;
+                    img{
+                        width: 22px;
+                    }
+                }
+                
+                .navbar_dots-content {
+                    display: none;
+                    border-top: 1px solid #475e79;
+                    position: absolute;
+                    background-color: #5689c5;
+                    min-width: 150px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    top: 32px;
+                    right: -4px;
+                    ul{
+                        padding-left: 0px;
+                        list-style: none;
+                        text-align: center;
+                        margin-bottom: 0px;
+                        li{
+                            padding: 6px;
+                            a{
+                                font-size: 12px;
+                                color: white;
+                            }
+                        }
+                        hr{
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+                
+                .navbar_dots:hover .navbar_dots-content {
+                    display: block;
+                }
+            }
+
+            .icons_navbar{
+                height: 55px; 
+                display: flex;
+                justify-content: space-around;                   
+               
+                a{
+                    cursor: pointer;
+                    text-align: center;
+                    height: 100%;
+                    width: 100%;
+                    display: inline-block;
+                  
+                    .single_icon{
+                    height: 100%;
+                    display: inline-block;
+                    padding-top: 13px;
+                    text-decoration: none;
+                    position: relative;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }  
+                    span{
+                        position: absolute;
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        background: red;
+                        font-size: 9px;
+                        right: -10px;
+                        top: 10px;
+                        color: white;
+                    }
+                                   
+                    
+                }
+                &:nth-child(-n+4){
+                    border-right: 1px solid #475e79;   
+                }   
+                &:hover{
+                    background: #475e79;
+                }
+            }
+            }
+        }
+    }
+    
+    
+}
+
+
+.icons_content_mobile{
+    display: none;
+}
+
+.unread{
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        height: 45px !important;
+        padding-top: 1px;
+        .container{
+            max-width: 100%;
+            .navbar_left{
+                width: 30% !important;
+                margin-left: -12px;
+                .navbar_geri{
+                    display: inline-block !important;                   
+                }
+                .navbar_menu{
+                    display: inline-block !important;
+                }
+                .logo_navbar{
+                    float: right;
+                    display: none;
+                    a{
+                        margin-right: 0px !important;
+                        margin-left: 0% !important;
+                        letter-spacing: 2px !important;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+            .navbar_center{
+                display: block;
+                width: 42%;
+                .navbar_logo{
+                    text-align: center;
+                    .logo_navbar_mobile{
+                        display: inline-block !important;
+                        a{
+                            color: white;
+                        }
+                    }
+                    .search_navbar{
+                        display: none;
+                    }
+                }
+                
+                .inside_messages_profile_image{
+                    display: inline-block;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                      
+                    }
+                }
+                .inside_messages_profile_title{
+                    display: inline-block;
+                    vertical-align: bottom;   
+                    margin-left: 5px;                                 
+                    a {
+                        font-size: 12px;
+                        display: inline-block;
+                        color: white;          
+                      
+                    }
+                    p {
+                        font-size: 11px;
+                        margin-bottom: 0px;
+                        color: white;
+                       
+                    }
+                }
+            }
+            .navbar_right{
+                width: 30% !important;
+                margin-right: -12px;
+                .navbar_mobile_right{
+                    display: inherit !important;
+                    text-align: right;
+                    .dropdown{
+                        display: inline-block !important;
+                        vertical-align: bottom !important;
+                    }
+                    .navbar_dots{
+                        display: inline-block !important;                        
+                    }
+                }
+              .icons_navbar{
+                  display: none !important;
+              }
+            }
+        }
+    }
+    .icons_content_mobile{
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+        left: 0px;
+        top: 45px;
+        z-index: 5;
+        background: #5689c5;
+        .single_icon{
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+          
+        a{
+            height: 100%;
+            display: inline-block;
+            padding-top: 2px;
+            text-decoration: none;
+            position: relative;
+            img{
+                width: 20px;
+                height: 20px;
+            }  
+            span{
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background: red;
+                font-size: 11px;
+                text-align: center;
+                right: -15px;
+                top: 1px;
+                color: white
+            }
+                           
+            
+        }
+        &:nth-child(-n+4){
+            border-right: 1px solid #475e79;   
+        }   
+        &:hover{
+            background: #475e79;
+        }
+    }
+    }
+
+}

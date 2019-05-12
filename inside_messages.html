@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name = "viewport" content = "width = device-width, initial-scale=1.0"> -->
+    <meta name = "viewport" content = "width = device-width, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NETLOG</title>
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar_left">
+                <div class="navbar_menu">
+                    <img id="menuclick" src="img/navbar_menu.png" alt="">
+                </div>
+                <div class="navbar_geri">
+                    <a href="#">
+                        <img src="img/navbar_back.png" alt=""> </a>
+                </div>
+
+                <div class="logo_navbar">
+                    <a class="navbar-brand" href="#">NETLOG</a>
+                </div>
+            </div>
+            <div class="navbar_center">
+                    <div class="navbar_logo">
+                            <div class="logo_navbar_mobile">
+                                    <a class="navbar-brand" href="#">NETLOG</a>
+                            </div>
+                            <div class="search_navbar">
+                                    <img src="img/search1.png" alt="">
+                                    <input type="text" name="search" placeholder="Axtarış...">
+                            </div>
+                    </div>
+           
+            </div>
+            <div class="navbar_right">
+                <div class="navbar_mobile_right">
+                    <div class="dropdown">
+                        <img id="dropdownclick" src="img/navbar_down.png" alt="">
+                        <span></span>
+                        <img id="dropupclick" src="img/navbar_up.png" alt="">
+                    </div>
+                    <div class="navbar_dots">
+                        <img src="img/navbar_dots.png" alt="">
+                        <div class="navbar_dots-content">
+                            <ul>
+                                <li>
+                                    <a href="">Qara siyahıya əlavə et</a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="">Mesaj tarixçəsini silmək</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons_navbar">
+                    <a href="news.html">
+                        <div class="single_icon">
+                            <img src="img/news_navbar.png" alt="">
+                            <span>2</span>
+                        </div>
+                    </a>
+                    <a href="messages.html">
+                        <div class="single_icon">
+
+                            <img src="img/message_navbar.png" alt="">
+                            <span>6</span>
+                        </div>
+                    </a>
+                    <a href="friends.html">
+                        <div class="single_icon">
+                            <img src="img/friend_navbar.png" alt="">
+                            <span>1</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="single_icon">
+                            <img src="img/foot_navbar.png" alt="">
+                            <span>9</span>
+                        </div>
+                    </a>
+                    <a href="notifications.html">
+                        <div class="single_icon">
+                            <img src="img/notification_navbar.png" alt="">
+                            <span>3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="icons_content_mobile">
+        <div class="single_icon">
+            <a href="">
+                <img src="img/news_navbar.png" alt="">
+                <span>2</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/notification_navbar.png" alt="">
+                <span>3</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/message_navbar.png" alt="">
+                <span>6</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/friend_navbar.png" alt="">
+                <span>1</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/foot_navbar.png" alt="">
+                <span>9</span>
+            </a>
+        </div>
+    </div>
+
+    <section class="content_menu">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-xl-3">
+                    <div class="contain">
+                        <div class="sidebar">
+                            <div class="sidenav">
+                                    <div class="profile_sidebar">
+                                            <div class="container">
+                                                    <div class="profile_sidebar_full">
+                                                            <div class="profile_sidebar_left">
+                                                                    <div class="profile_image">
+                                                                            <img src="img/anar.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="profile_title">
+                                                                            <a href="profile_other.html">Anar</a>
+                                                                            <p>Meshguldur</p>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="profile_sidebar_right">
+                                                                <p>Hesab:
+                                                                        <span>0</span>
+                                                                        <img src="img/netcoin.png" alt="">
+                                                                </p>
+                                                                <a href="">Artırmaq</a>
+                                                            </div>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                <ul>
+                                    <li>
+                                        <a href="news.html">
+                                            <img src="img/news.png" alt=""> Xəbərlər
+                                            <span>2</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="notifications.html">
+                                            <img src="img/notification_sidebar.png" alt=""> Bildirişlər
+                                            <span>3</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="messages.html">
+                                            <img src="img/message.png" alt=""> Mesajlar
+                                            <span>6</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="friend_search.html">
+                                            <img src="img/search.png" alt=""> Dost axtar</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="friends.html">
+                                            <img src="img/friends.png" alt=""> Dostlarım
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+
+
+
+                                    <li>
+                                        <a href="guests.html">
+                                            <img src="img/foot_sidebar.png" alt=""> Qonaqlar
+                                            <span>9</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="photos.html">
+                                            <img src="img/photo.png" alt=""> Şəkillərim</a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="settings.html">
+                                            <img src="img/settings.png" alt=""> Sazlamalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#contact">
+                                            <img src="img/logout.png" alt=""> Çıxış</a>
+                                    </li>
+
+                                </ul>
+
+                                <footer class="footer_sidebar">
+                                        <div class="container">
+                                            <div class="footer_sidebar_flex">
+                                                <div class="footer_sidebar_left">
+                                                    <div class="dropup show">
+                                                        <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Əlavə</a>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <a class="dropdown-item" href="#">Qaydalar</a>
+                                                            <a class="dropdown-item" href="#">Kömək</a>
+                                                            <a class="dropdown-item" href="#">Əlaqə</a>
+                                                        </div>
+                                                    </div>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="">Qaydalar</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Haqqimizda</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Elaqe</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                    <div class="footer_sidebar_right">
+                                                        <div class="footer_copyright">
+                                                            <p> &#169; NETLOG</p>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                    <div class="contain">
+                        <div class="content">
+                            <div class="inside_messages">
+                                <div class="inside_messages_top">
+                                    <div class="inside_messages_header">
+                                        <div class="geriye">
+
+                                            <a href=""><img src="img/left.png" alt=""></a>
+                                        </div>
+                                        <div class="inside_messages_profile">
+                                            <div class="inside_messages_profile_image">
+                                                <img src="img/barack_obama.jpg" alt="">
+                                            </div>
+                                            <div class="inside_messages_profile_title">
+                                                <a href="">Barack Obama</a>
+                                                <p>Online: dünən saat 21:45</p>
+                                            </div>
+                                        </div>
+                                        <div class="dots">
+                                            <div class="dropdown">
+                                                <img src="img/dots.png" alt="">
+                                                <div class="dropdown-content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="">Qara siyahıya əlavə et</a>
+                                                        </li>
+                                                        <hr>
+                                                        <li>
+                                                            <a href="">Mesaj tarixçəsini silmək</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----------- modalPhoto ----------->
+                                <div id="ModalBtnPhoto" class="modalPhoto">
+                                    <span class="closePhoto">×</span>
+                                    <div class="modal-content">
+
+                                        <div class="modal-body">
+                                          <div class="item_slider">
+                                            <img src="img/yusifff.jpeg" alt="">
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="modal-footer-left">
+                                                <p>14:46<span>28.12.2018</span></p>
+                                            </div>
+                                            <div class="modal-footer-right">
+                                                <p><img src="img/delete.png" alt=""> Silmək</p>
+                                                <p><img src="img/downloading.png" alt="">Yükləmək</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----------- END ----------->
+
+                                <!----------- modalMiniBlackList ----------->
+                                <div id="modalMiniBlackList" class="modalMini">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="exampleModalLabel">Qara siyahi</h6>
+                                            <span class="closeMini">×</span>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yes">Bəli</button>
+                                            <button type="button" class="btn btn-no" data-dismiss="modal">Xeyr</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----------- END ----------->
+
+                                <!----------- modalMiniMessagesDelete ----------->
+                                <div id="modalMiniMessagesDelete" class="modalMini">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h6 class="modal-title" id="exampleModalLabel">Mesaj tarixcesi ?</h6>
+                                            <span class="closeMini">×</span>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-yes">Bəli</button>
+                                            <button type="button" class="btn btn-no" data-dismiss="modal">Xeyr</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----------- END ----------->
+
+
+                                <div class="inside_messages_middle">
+
+                                    <div class="profile_messages_left">
+                                        <div class="container">
+                                            <div class="profile_messages_left_image">
+                                                <img src="img/barack_obama.jpg" alt="">
+                                            </div>
+                                            <div class="profile_messages_left_title">
+                                                <a href="">Mark Zuckerberg</a>
+                                                <span>11.04.2018 12:06</span>
+                                                <p>Salam necesen ? Ne var ne yox ? Haralardasan ? <span><img class="tick"
+                                                            src="img/tick-double.png" alt=""></span></p>
+                                                <p>Yazdaaaa<span><img class="tick" src="img/tick-double.png" alt=""></span></p>
+                                                <p>Noldu ? :) <span><img class="tick" src="img/tick-double.png" alt=""></span></p>
+                                                <p><img class="imageInTagP" onclick="showDetails(this)" data-modal-type="ModalBtnPhoto" src="img/test.jpg" alt=""><span><img class="tick" src="img/tick-double.png" alt=""></span></p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile_messages_right">
+                                        <div class="container">
+                                            <div class="profile_messages_right_image">
+                                                <img src="img/jeniffer_lopez.jpg" alt="">
+                                            </div>
+                                            <div class="profile_messages_right_title">
+                                                <a href="">Jeniffer Lopez</a>
+                                                <span>11.04.2018 12:08</span>
+                                                <p>Shukur salamatciliq evdeyem <span><img class="tick" src="img/tick-double.png" alt=""></span></p>
+                                                <p><img class="imageInTagP" src="img/barcelona_realmadrid_cropped.jpg" alt=""><span><img class="tick" src="img/tick-double.png" alt=""></span></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile_messages_left">
+                                        <div class="container">
+                                            <div class="profile_messages_left_image">
+                                                <img src="img/barack_obama.jpg" alt="">
+                                            </div>
+                                            <div class="profile_messages_left_title">
+                                                <a href="">Mark Zuckerberg</a>
+                                                <span>11.04.2018 12:06</span>
+                                                <p>Neynirsen ? <span><img class="tick" src="img/tick-double.png" alt=""></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile_messages_right">
+                                        <div class="container">
+                                            <div class="profile_messages_right_image">
+                                                <img src="img/jeniffer_lopez.jpg" alt="">
+                                            </div>
+                                            <div class="profile_messages_right_title">
+                                                <a href="">Jeniffer Lopez</a>
+                                                <span>11.04.2018 12:08</span>
+                                                <p>Tarqovudayam <span><img class="tick" src="img/tick-double.png" alt=""></span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="inside_messages_bottom">
+                                    <div class="down">
+                                        <img src="img/down.png" alt="">
+                                        <p><span>2</span>yeni mesaj</p>
+                                    </div>
+                                    <div class="inside_messages_footer_blockList">
+                                        <img src="img/blockList.png" alt="">
+                                        <p>İstifadəçi sizi bloklayıb</p>
+                                    </div>
+                                    <div class="inside_messages_footer">
+
+                                        <div id="smiles" class="smails_inside">
+                                            <img class="smails" src="img/smiley/8.png" alt="">
+                                            <div class="smails-content">
+
+                                                <i>
+                                                    <img src="img/smiley/1.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/2.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/3.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/4.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/5.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/6.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/7.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/8.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/9.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/10.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/11.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/12.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/13.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/14.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/15.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/16.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/17.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/18.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/19.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/20.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/21.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/1.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/2.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/3.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/4.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/5.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/6.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/7.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/8.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/9.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/10.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/11.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/12.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/13.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/14.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/15.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/16.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/17.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/18.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/19.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/20.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/21.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/1.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/2.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/3.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/4.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/5.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/6.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/7.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/8.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/9.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/10.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/11.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/12.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/13.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/14.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/15.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/16.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/17.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/18.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/19.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/20.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/21.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/1.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/2.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/3.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/4.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/5.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/6.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/7.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/8.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/9.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/10.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/11.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/12.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/13.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/14.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/15.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/16.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/17.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/18.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/19.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/20.png" alt="">
+                                                </i>
+                                                <i>
+                                                    <img src="img/smiley/21.png" alt="">
+                                                </i>
+
+
+                                            </div>
+                                        </div>
+                                        <form action="">
+                                            <textarea id="formtextarea" style="display:none"></textarea>
+                                            <div contenteditable="true" class="write_message"></div>
+                                            <button class="send_button" type="submit" value="Submit">Göndər</button>
+                                        </form>
+                                        <label class="send_photo"> <img src="img/send_photo.png" alt="">
+                                            <input type="file" id="File" multiple size="60">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xl-3">
+                    <div class="contain2">
+                        <div class="contain_up">
+                            <ul id="navi">
+                                <li class="mesajlar_li active" onclick="showDetails(this)" data-modal-type="modalMiniBlackList">
+                                    <a href="#">Qara siyahıya əlavə et</a>
+                                </li>
+                                <li class="mesajlar_li" onclick="showDetails(this)" data-modal-type="modalMiniMessagesDelete">
+                                    <a href="#">Mesaj Tarixçəsini silmək</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="contain_bottom">
+                            <p>Sizin hesab:
+                                <span>0</span>
+                                <img src="img/coin.png" alt=""> </p>
+                            <a href="">Balans artırmaq</a>
+                            <hr>
+
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/crown.png" alt="">VIP statusu</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/invisible.png" alt="">Gorünməzlik</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/gift.png" alt="">Hədiyyələr</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/money.png" alt="">Pul göndər</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/nickname.png" alt="">Ləqəb Dəyişmək</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/like.png" alt="">VİP Like</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+            function append_top(id, results) {
+                if (screen.width<=768) {
+                    $('.navbar_center').html('<div class="navbar_logo" style="display:none"><div class="logo_navbar_mobile"><a class="navbar-brand" href="">NETLOG</a></div></div><div class="navbar_profile"><div class="inside_messages_profile_image"><img src="img/barack_obama.jpg" alt=""></div><div class="inside_messages_profile_title"><a href="">Barack Obama</a><p>Online: saytda<span id="online_time"></span></p></div></div>');
+                }else{
+                    $('.inside_messages_profile').append('<div class="inside_messages_profile_image"><img src="" alt=""></div><div class="inside_messages_profile_title"><a href=""></a><p>Online: <span id="online_time"></span></p></div>');
+                }
+            }
+            append_top();
+    </script>
+
+
+    <script src="js/script.js"></script>
+   
+
+
+
+
+
+</body>
+
+</html>

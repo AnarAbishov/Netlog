@@ -1,0 +1,36 @@
+.rules_menu{
+    padding-top: 70px;
+    .row{
+        background: white;
+        border-radius: 10px;
+        .rules_content{
+            padding: 15px;
+            .header{
+                margin-bottom: 20px;
+                h4{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    color: #4c4c4c;
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid gainsboro;
+                }
+            }
+            h6{
+                font-size: 17px;
+            }
+            p{
+                color: #4c4c4c;
+                    font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rules_menu{
+        padding-top: 40px;
+    }
+}

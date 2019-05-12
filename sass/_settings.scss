@@ -1,0 +1,145 @@
+body {
+   
+    .content_menu {
+        // padding-top: 5%;
+      
+        .col-md-6 {
+            .settings_content {
+                width: 100%;
+                border-radius: 5px;
+                background: white;
+                  
+                    .settings {
+                        padding-top: 15px;
+                        .title{
+                            margin-bottom: 10px;
+                            border-bottom: 1px solid gainsboro;
+                            p{
+                                margin-left: 10px;
+                                color:#4e4e4e;
+                                
+                            }
+                        }
+                        .forms{
+                            p{
+                                margin-bottom: 5px;
+                                margin-left: 10px;
+                            }
+                            form{
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid #d7d7d7;
+                            padding: 10px 0px;
+                                label{
+                                    font-size: 13px;
+                                }
+                                input{
+                                    width: 40%;
+                                    font-size: 12px;
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    margin-left: 10px;
+                                    &:focus{
+                                        box-shadow: none;
+                                    }
+                                }
+                                select{
+                                    width: 40%;                                    
+                                    font-size: 12px;
+                                    margin-bottom: 10px;  
+                                    display: block;
+                                    margin-left: 10px; 
+                                    padding: 7px;                                                             
+                                    &:focus{
+                                        border-color: #ced4da;
+                                        box-shadow: none;
+                                    }
+                                }
+                                textarea{
+                                    width: 96%;                                    
+                                    margin-left: 10px;
+                                    padding: 5px 10px;
+                                    display: block; 
+                                    font-size: 12px; 
+                                    margin-bottom: 10px; 
+                                    border: 1px solid #ced4da;
+                                    border-radius: 5px;
+                                    min-height: 65px;
+                                    outline: none;
+                                
+                                                                                                                          
+                                }
+                                button{
+                                    margin-left: 10px;
+                                    font-size: 12px;
+                                    background: #4a76a8;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }  
+            }
+        }
+       
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    
+}
+
+@media screen and (max-width: 991px){
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    .content_menu{
+        // padding-top: 1% !important;
+        // padding-bottom: 0% !important;
+        .container{
+            max-width: none;
+        
+        .col-md-6{
+            .contain{
+                margin-right: -15px;
+                    margin-left: -15px;
+                .settings_content{
+                    max-width: 100%;
+                    padding-top: 40px;
+                     
+                }
+            }
+        }
+       
+    }
+ }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .content_menu {
+        // padding-top: 4% !important;
+        // padding-bottom: 0% !important;
+        .container {
+           
+            .col-md-6 {
+                .contain {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    .settings_content {
+                        width: 100%;
+                        padding-top: 30px;
+                    }
+                 
+                }
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width: 356px) {
+    
+
+}

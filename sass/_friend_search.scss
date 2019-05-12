@@ -1,0 +1,555 @@
+body {
+ 
+   
+    .content_menu {
+        // padding-top: 5%;
+      
+        .col-md-6 {
+            .friend_search_content {
+                width: 100%;
+                border-radius: 5px;
+                background: white;
+                
+                    .friend_search_top {
+                        position: fixed;
+                        z-index: 1;
+                        width: 540px;
+                        margin-top: -50px;
+                        padding-top: 50px;
+                        background-color: #edeef0;
+                        .friend_search_up{
+                            .friend_search_filter_up {
+                                cursor: pointer;
+                                display: flex;
+                                justify-content: space-between;
+                                border-top-left-radius: 5px;
+                                border-top-right-radius: 5px;
+                                border-bottom: 1px solid #dfdbdb;
+                                background-color: white;
+                                .friend_search_left{
+                                    height: 40px;
+                                    p{
+                                                                
+                                        color: #6f8ba6;
+                                        padding-left: 10px;                                    
+                                        margin-bottom: 0px; 
+                                        line-height: 40px;
+                                        font-size: 13px;                                                                                                
+                                    }
+                                }
+                                .friend_search_right{
+                                    height: 40px;                               
+                                    img:nth-child(1){
+                                        padding-top: 10px;
+                                        padding-right: 10px;  
+                                        width: 32px;                                                                                                                           
+                                    }
+                                    img:nth-child(2){
+                                        display: none;
+                                        padding-top: 10px;
+                                        padding-right: 10px;  
+                                        width: 32px;                                                                                                                              
+                                    }
+                                }
+                            }
+                            .friend_search_filter{
+                                display: none;
+                                background: white;
+                                padding-top: 10px;
+                          
+                                border-bottom: 1px solid #e0e0e0;
+                                form{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-around;
+                                    font-size: 13px;
+                                    .gender{
+                                        display: flex;  
+                                        align-items: center;  
+                                        width: 150px;   
+                                        margin-bottom: 10px;                                                                                               
+                                        label{
+                                            margin-bottom: 0px;
+                                            margin-right: 5px;
+                                        }
+                                        select{
+                                            font-size: 13px;
+                                            &:focus{
+                                                border-color: #ced4da;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                    .age{
+                                        display: flex;
+                                        align-items: center;
+                                        width: 150px; 
+                                        margin-bottom: 10px;                                                                                                  
+                                        label{
+                                            margin-bottom: 0px;
+                                            margin-right: 5px;                                            
+                                        }
+                                        select{
+                                            font-size: 13px;
+                                      
+                                            &:focus{
+                                                border-color: #ced4da;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                        
+                                    }
+                                   
+                                    .country{
+                                        width: 155px;
+                                        display: flex;   
+                                        align-items: center;
+                                        margin-bottom: 10px;                           
+                                        label{
+                                            margin-bottom: 0px;
+                                            margin-right: 5px;
+                                        }
+                                        select{
+                                            font-size: 13px;
+
+                                            &:focus{
+                                                border-color: #ced4da;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                    .city{
+                                        display: flex;    
+                                        align-items: center;  
+                                        width: 155px;      
+                                        margin-bottom: 10px;                                                                                                       
+                                        label{
+                                            margin-bottom: 0px;
+                                            margin-right: 5px;
+                                        }
+                                        select{
+                                            font-size: 13px;
+
+                                            &:focus{
+                                                border-color: #ced4da;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                    .online{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 150px;    
+                                        margin-bottom: 10px;                                                                                               
+                                        label{
+                                            margin-bottom: 0px;
+                                            margin-right: 5px;
+                                            input{
+                                                width: 18px;
+                                                height: 18px;
+                                                vertical-align: middle;
+                                                margin-left: 4px;
+                                            }
+                                        }
+                                    }
+                                    .update_filter{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;                                        
+                                        width: 150px;  
+                                        margin-bottom: 10px;                                                         
+                                        button{
+                                            font-size: 12px;
+                                            height: 35px;
+                                            background: #4a76a8;
+                                            color: white;
+                                            &:hover{
+                                                background: #475e79;
+                                            }
+                                        }                                  
+                                    }
+                                   
+                                }
+                            }
+                        }
+                       
+                        
+                    }
+                    .friend_search_middle {
+                        padding-top: 40px;
+                        min-height: 90vh;
+                        padding-bottom: 1%;
+                        header{
+                            width: 100%;
+                            background: white;
+                            display: block;
+                            height: 105px;
+                            transition: top 0.2s ease-in-out;
+                            .vip_users{
+                                border-bottom: 1px solid #f2f1f1;
+                                padding-bottom: 5px;
+                                .vip_users_title{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 5px 10px 5px 10px;
+                                    .vip_users_title_left{
+                                        display: inline-block;
+                                        p{
+                                            margin-bottom: 0px;
+                                            font-size: 13px;
+                                            img{
+                                                width: 16px;
+                                                height: 16px;
+                                                vertical-align: top;
+                                                margin-right: 4px;
+                                            }
+                                        }
+                                    }
+                                    .vip_users_title_right{
+                                        display: inline-block;
+                                        font-size: 13px; 
+                                        a{
+                                          color: #6f8ba6;                                                                                   
+                                        }
+                                    }
+                                }
+                                .owl-carousel{
+                                    z-index: 0;
+                                    padding: 5px 35px 35px 35px;
+                                                                     
+                                    .owl-item{
+                                        display: flex;
+                                        justify-content: center;
+                                        .item{
+                                            cursor: pointer;
+                                            width: 45px;
+                                            height: 70px;
+                                            text-align: center;
+                                            img{
+                                            width: 45px;
+                                            height: 45px;
+                                            border-radius: 50%; 
+                                            }
+                                            p{
+                                                padding-top: 5px;
+                                                font-size: 11px;
+                                                word-wrap: break-word;
+                                            }
+                                        }
+                                    }
+                                    .owl-nav{
+                                        text-align: inherit;
+                                        margin-top: -65px;
+                                        .owl-prev{
+                                            border: 1px solid #cfcfcf;
+                                            outline: none;                                            
+                                            margin-left: -25px;
+                                            background: #e1e1e1;
+                                            border-radius: 50%;
+                                            width: 20px;
+                                            height: 20px;
+                                            position: relative;
+                                            span{
+                                                position: absolute;
+                                                top: -13px;
+                                                left: 5px;
+                                                font-size: 26px;
+                                            }
+                                        }
+                                        .owl-next{
+                                            border: 1px solid #cfcfcf;
+                                            outline: none;
+                                            margin-right: -25px;
+                                            float: right;
+                                            background: #e1e1e1;
+                                            border-radius: 50%;
+                                            width: 20px;
+                                            height: 20px;
+                                            position: relative;
+                                            
+                                            span{
+                                                position: absolute;
+                                                top: -13px;
+                                                right: 5px;
+                                                font-size: 26px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .friend_search_vip_hide { 
+                            display: none;
+                          }
+                        .friend_search_profiles{
+                            padding-top: 10px;
+
+                            .friend_search_profile {
+                                border-bottom: 1px solid #f2f1f1;
+                                padding-bottom: 5px;
+                                padding-top: 5px;
+                                a{
+                                    text-decoration: none;
+                                .container{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    
+                                        .friend_search_profile_image_title{
+                                            display: inline-block;
+                                                .friend_search_profile_image {
+                                    
+                                                    display: inline-block;
+                                                    margin-right: 5px;
+                                                    img {
+                                                        width: 100px;
+                                                        height: 100px;
+                                                        margin-top: 6px;
+                                                        border-radius: 4px;
+                                                    }
+                                                }
+                                                .friend_search_profile_title {
+                                                    display: inline-block;   
+                                                    vertical-align: top;                         
+                                                    .nameSurname {
+                                                        display: block;
+                                                        font-size: 15px;
+                                                        font-weight: 600;
+                                                        display: inline-block;
+                                                        color: #3e7785;
+                                                        text-decoration: none;                   
+                                                    }
+                                                    .online{
+                                                        display: inline-block;
+                                                        width: 8px;
+                                                        height: 8px;
+                                                        margin-left: 3px;
+                                                        border-radius: 50%;
+                                                        background: green;
+                                                    }
+                                                    p {
+                                                        display: block;
+                                                        word-wrap: break-word;                         
+                                                        color: #6c6b6b;
+                                                        font-size: 14px;
+                                                        margin-bottom: 0px;
+                                                    }
+                                                }
+                                            
+                                            
+                                        }
+                                        
+                                        .friend_search_profile_button{
+                                            display: inline-block;
+                                            text-align: right;
+                                            line-height: 100px;
+                                            
+                                                img{
+                                                    width: 16px;
+                                                }
+                                
+                                        }
+                                    }
+                                    
+                                }
+                                &:hover{
+                                    background: #ecf5fd;
+                                }
+                            }
+                        }
+                        
+                    }  
+                  
+      
+            }
+        }
+       
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    .content_menu{
+        // padding-top: 6% !important;
+        .friend_search_content{
+            .friend_search_top{
+                width: 450px !important;
+            }
+            .friend_search_middle{
+                    .friend_search_vip{
+                      width: 450px !important;                        
+                    }
+                    .friend_search_profiles{
+                        .friend_search_profile{
+                           
+                        }
+                    }
+            }
+        }
+  }
+}
+
+@media screen and (max-width: 991px){
+    .content_menu{
+        // padding-top: 8% !important;
+        .friend_search_content{
+            .friend_search_top{
+                width: 330px !important;
+                .friend_search_up{
+                    .friend_search_filter_up{
+
+                    }
+                    .friend_search_filter{
+                        form{
+                            
+                        }
+                    }
+                }
+            }
+            .friend_search_middle{
+                    .friend_search_vip{
+                      width: 330px !important;                        
+                    }
+                    .friend_search_profiles{
+                        .friend_search_profile{
+                            .friend_search_profile_image_title{
+                                .friend_search_profile_title{
+                                    p{
+                                        font-size: 12px !important;
+                                    }
+                                }
+                            }
+                            .friend_search_profile_button{
+                                button{
+                                    font-size: 9px !important;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+  }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .content_menu{
+        // padding-top: 1% !important;
+        // padding-bottom: 0% !important;
+        .container{
+            max-width: none;
+        
+        .col-md-6{
+            .contain{
+                margin-right: -15px;
+                    margin-left: -15px;
+                    .friend_search_content{
+                      
+                        .friend_search_top{
+                            top: 45px;
+                            width: 100% !important;
+                        }
+                        .friend_search_middle{
+                            padding-top: 75px;
+                                .friend_search_vip{
+                                    top: 100px;
+                                   width: 100% !important;        
+                                }
+                                .friend_search_profiles{
+                                    .friend_search_profile{
+                                        
+                                    }
+                                }
+                        }
+                    }
+            }
+        }
+       
+    }
+ }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .content_menu {
+        // padding-top: 4% !important;
+        // padding-bottom: 0% !important;
+        .container {
+           
+            .col-md-6 {
+                .contain {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    .friend_search_content{
+                        
+                        .friend_search_middle{
+                            padding-top: 70px;
+                                .friend_search_profiles{
+                             
+                                    .friend_search_profile{
+                                        .friend_search_profile_image_title{
+                                            .friend_search_profile_title{
+                                                p{
+                                                    font-size: 12px !important;
+                                                }
+                                            }
+                                        }
+                                        .friend_search_profile_button{
+                                            button{
+                                               
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width: 356px) {
+    
+    .content_menu {
+        // padding-top: 7% !important;
+        // padding-bottom: 0% !important;
+        .container {
+           
+            .col-md-6 {
+                .contain {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    .friend_search_content{
+                        
+                        .friend_search_middle{
+                            padding-top: 75px;
+                                .friend_search_profiles{
+                         
+                                    .friend_search_profile{
+                                        .friend_search_profile_image_title{
+                                            .friend_search_profile_title{
+                                                p{
+                                                    font-size: 11px !important;
+                                                }
+                                            }
+                                        }
+                                        .friend_search_profile_button{
+                                            button{
+                                                img{
+                                                    margin-right: 2px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+          
+        }
+    }
+}

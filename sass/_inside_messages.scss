@@ -1,0 +1,882 @@
+body {
+
+    .content_menu {
+        // padding-top: 5%;
+       
+        .col-md-6 {
+           
+            .inside_messages{              
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background: white;
+             
+                .inside_messages_top{
+                        position: fixed;
+                        z-index: 1;
+                        width: 540px;
+                        margin-top: -50px;
+                        padding-top: 50px;
+                        background-color: #edeef0;
+                    .inside_messages_header{
+                            height: 50px;
+                            border: 1px solid #a4a4a4;
+                            display: flex;
+                            justify-content: space-around;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            border-bottom: 1px solid #dfdbdb;
+                            background-color: white;
+                            .geriye{
+                                display: none;
+                                line-height: 50px;
+                                cursor: pointer;
+                                img{
+                                    width: 24px;
+                                    height: 24px;
+                                    margin-left: 10px;
+                                }
+                                &:hover{
+                                
+                                    background: linear-gradient(to right, #ecebeb , white);
+                                }
+                            }
+                            
+                            .inside_messages_profile{
+                                display: inline-block;                                
+                                padding-top: 3px;
+                                .inside_messages_profile_image{
+                                    display: inline-block;
+                                    img {
+                                        width: 35px;
+                                        height: 35px;
+                                        border-radius: 50%;
+                                      
+                                    }
+                                }
+                                .inside_messages_profile_title{
+                                    display: inline-block;
+                                    vertical-align: middle;   
+                                    margin-left: 5px;                                 
+                                    a {
+                                        font-size: 14px;
+                                        display: inline-block;
+                                        color: #3e7785;          
+                                        
+                                    }
+                                    p {
+                                        font-size: 11px;
+                                       margin-bottom: 0px;
+                                        color: gray;
+                                    }
+                                }
+                            }
+                            .dots{
+                                display: none;                                
+                                line-height: 50px;
+                              
+                                padding-right: 10px;
+                                .dropdown {
+                                    position: relative;
+                                    display: inline-block;
+                                    img{
+                                        width: 24px;
+                                        height: 24px;
+                                        cursor: pointer;
+                                        margin-right: 5px;
+                                    }
+                                }
+                                
+                                .dropdown-content {
+                                    display: none;
+                                    position: absolute;
+                                    background-color: #f9f9f9;
+                                    min-width: 150px;
+                                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                    z-index: 1;
+                                    top: 50px;
+                                    right: -7px;
+                                    ul{
+                                        padding-left: 0px;
+                                        margin-bottom: 0px;
+                                        li{
+                                            list-style: none;    
+                                            cursor: pointer;  
+                                            height: 45px;
+                                            margin-top: -5px;                                      
+                                            a{
+                                                font-size: 12px;
+                                                color: #6f8ba6;
+                                                margin-left: 5%;
+                                                text-decoration: none;
+                                            }
+                                        }
+                                        li:hover{
+                                            background: #dcdddf;
+                                        }
+                                        hr{
+                                            margin-top: 0px;
+                                            margin-bottom: 0px;
+                                        }
+                                    }
+                                    
+                                }
+                                
+                                .dropdown:hover .dropdown-content {
+                                    display: block;
+                                }
+                            }
+                    }
+                }                  
+                .inside_messages_middle{
+                    padding-top: 45px;
+                    min-height: 81.3vh;       
+                    padding-bottom: 12%;
+                    border: 1px solid #a4a4a4;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    
+                        .profile_messages_left {
+                            padding: 12px 0px;
+                            margin: 2px 10px;
+                            .profile_messages_left_image {
+                                display: inline-block;
+                                img {
+                                    width: 35px;
+                                    height: 35px;
+                                    border-radius: 50%;
+                                    box-shadow: 0 0 5px gray;
+                                    margin-top: 6px;
+                                }
+                            }
+                            .profile_messages_left_title {
+                                width: 83%;
+                                display: inline-block;   
+                                vertical-align: top; 
+                                margin-left: 5px;                        
+                                a {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    display: inline-block;
+                                    color: #3e7785;
+                                    text-decoration: none;
+                                   
+                                }
+                                span{
+                                    margin-left: 5px;
+                                    color: #b8b8b8;
+                                    font-size: 13px;
+                                }
+                                p {
+                                    word-wrap: break-word;                              
+                                    color: #494949;
+                                    font-size: 13px;
+                                    margin: 4px 0px;
+                                    span{
+                                        margin-left: 5px;
+                                        .tick{
+                                            width: 16px;
+                                            height: 16px;
+                                        }
+                                    }
+                                    .imageInTagP{
+                                        margin: 1px;
+                                        max-width: 50%;
+                                        height: auto;
+                                        cursor: pointer;
+                                    }
+                                    .smileyInTagP{
+                                        margin: 1px;
+                                    }
+                                }
+                                
+                            }
+                        
+                        }
+                        .profile_messages_right {
+                            background-color: #f4f5f6;
+                            padding: 12px 0px;
+                            margin: 2px 10px;
+                            .profile_messages_right_image {
+                                display: inline-block;
+                                img {
+                                    width: 35px;
+                                    height: 35px;
+                                    border-radius: 50%;
+                                    box-shadow: 0 0 5px gray;
+                                    margin-top: 6px;
+                                }
+                            }
+                            .profile_messages_right_title {
+                                width: 85%;
+                                display: inline-block;   
+                                vertical-align: top; 
+                                margin-left: 5px;                        
+                                a {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    display: inline-block;
+                                    color: #3e7785;
+                                    text-decoration: none;
+                                    
+                                }
+                                span{
+                                    margin-left: 5px;
+                                    color: #b8b8b8;
+                                    font-size: 13px;
+                                }
+                                p {
+                                    word-wrap: break-word;                              
+                                    color: #494949;
+                                    font-size: 13px;
+                                    margin: 4px 0px;
+                                    span{
+                                        margin-left: 5px;
+                                        .tick{
+                                            width: 16px;
+                                            height: 16px;
+                                        }
+                                    }
+                                    .imageInTagP{
+                                        margin: 1px;
+                                        max-width: 50%;
+                                        height: auto;
+                                        cursor: pointer;
+                                    }
+                                    .smileyInTagP{
+                                        margin: 1px;
+                                    }
+                                }
+                                
+                            }
+                        
+                        }
+                    
+                       
+                   
+                }
+                .inside_messages_bottom{
+                    position: fixed;
+                    bottom: 10px;
+                    z-index: 1;
+                    width: 540px;
+                    margin-bottom: -50px;
+                    padding-bottom: 50px;
+                    background-color: #edeef0;
+                    .down{
+                        position: absolute;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        bottom: 105%;
+                        width: 150px;
+                        background: white;
+                        border: 1px solid #a4a4a4;
+                        padding: 8px 14px 8px 14px;
+                        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        cursor: pointer;
+                        img{
+                            width: 18px;
+                            height: 18px;
+                        }
+                        p{
+                            margin: -2px 0px 0px 4px;
+                            font-size: 13px;
+                            color: #4f4f4f;
+                            span{
+                                margin-right: 5px;
+                            }
+                        }
+                        &:hover{
+                            background: #edeef0;
+                        }
+                    }
+
+                    .inside_messages_footer_blockList{
+                            display: none;
+                            justify-content: center;
+                            border: 1px solid #a4a4a4;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            background: #f4f5f6;
+                            padding: 15px;
+                        img{
+                            width: 24px;
+                            height: 24px;
+                        }
+                        p{
+                            font-size: 13px;
+                            margin-bottom: 0px;
+                            margin-left: 10px;
+                            color: #3b3b3b;
+                        }
+                    }
+                    .inside_messages_footer{
+                            display: flex;
+                            justify-content: space-evenly;
+                            border: 1px solid #a4a4a4;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            background: #f4f5f6;
+                        .smails{
+                            cursor: pointer;
+                            width: 22px;
+                            height: 22px;
+                            margin-top: 14px;  
+                        }
+                        .smails-loading_next {
+                            animation: rotation_next 0.2s linear;
+                       }
+                    
+                        @keyframes rotation_next {
+                                from {
+                                        -webkit-transform: rotate(0deg);
+                                }
+                                to {
+                                        -webkit-transform: rotate(180deg);
+                                }
+                        }
+
+                        .smails-loading_prev {
+                            animation: rotation_prev 0.2s linear;
+                       }
+                    
+                        @keyframes rotation_prev {
+                                from {
+                                    -webkit-transform: rotate(180deg);
+                                }
+                                to {
+                                    -webkit-transform: rotate(0deg);
+                                }
+                        }
+                     
+                        .smails-content{
+                            overflow-y: scroll;
+                            display: none;
+                            position: absolute;
+                            top: -131px;
+                            left: 0px;
+                            width: 100%;
+                            height: 132px;
+                            background: white;
+                            border: 1px solid gray;
+                                i{
+                                cursor: pointer;
+                                box-sizing: content-box;
+                                width: 24px;
+                                height: 24px;
+                                float: left;
+                                display: block;
+                                padding: 5px;
+                                margin-left: 3px;
+                                &:hover{
+                                    background-color: #d5d3d3;
+                                    border-radius: 8px;
+                                }
+                                    img{
+                                        float: left;
+                                        display: block;
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                 }
+                        }
+                        // .smails:hover + .smails-content{
+                        //     display: block;
+                        // }
+                        form{
+                            display: inline-block;
+                            width: 82%;
+                            .write_message{
+                                color: #3b3a3a;
+                                min-height: 29px;
+                                max-height: 70px;
+                                display: inline-block;
+                                background: white;
+                                width: 86%;
+                                border-radius: 10px;
+                                margin: 10px 0px 10px 0px;
+                                vertical-align: middle;
+                                box-sizing: border-box;
+                                resize: none;
+                                padding-bottom: 5px;                              
+                                border-image: none;
+                                border-color: #a4a4a4;
+                                border-style: solid;
+                                border-width: 0.5px;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                font-size: 14px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                word-wrap: break-word;
+                                box-sizing: border-box;
+                             
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+                            .send_button{
+                                width: 12%;
+                                background: white;
+                                cursor: pointer;
+                                border: 1px solid #a4a4a4;
+                                border-radius: 10px;
+                                color: #4f4f4f;
+                                padding: 5px 5px 5px 5px;
+                                font-size: 12px;
+                                outline: none;
+                                float: right;
+                                margin-top: 10px;
+                                height: 29.6px;
+                                &:hover{
+                                    background: #edeef0;
+                                }
+                            }
+                            
+                        }
+                       
+                        .send_photo{
+                            background: white;
+                            cursor: pointer;
+                            border: 1px solid #a4a4a4;
+                            border-radius: 10px;
+                            color: #4f4f4f;
+                            padding: 0px 6px 0px 6px;
+                            outline: none;
+                            height: 29.6px;
+                            margin-top: 10px;
+                            line-height: 24px;
+                            &:hover{
+                                background: #edeef0;
+                            }
+                                img{
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                                input[type="file"] {
+                                    display: none;
+                                }
+                        }
+                        
+                    }
+                }
+            }
+           
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    .content_menu{
+        // padding-top: 6% !important;
+    
+    
+    .col-md-6{
+        .contain{
+            
+            .inside_messages{
+                .inside_messages_top{
+                    width: 450px !important;   
+                    .inside_messages_header{
+                        .inside_messages_profile{
+                          
+                        }
+                    }
+                }
+                .inside_messages_middle{
+                    padding-top: 45px;
+                    padding-bottom: 14%;
+                    .profile_messages_left{
+                      
+                    }
+                    .profile_messages_right{
+                       
+                    }
+                }
+                .inside_messages_bottom{
+                    width: 450px !important;
+                    form{
+                        width: 80% !important;
+                        .write_message{
+                            width: 84% !important;
+                        }
+                        .send_button{
+                            width: 14% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  
+  }
+}
+
+@media screen and (max-width: 991px){
+    body{
+        .content_menu{
+            // padding-top: 8% !important;
+                .col-md-6{
+                    .contain{
+                    
+                        .inside_messages{
+                            .inside_messages_top{
+                                width: 330px !important; 
+                                margin-top: -25px;
+                                padding-top: 25px;  
+                                .inside_messages_header{
+                                    .geriye{
+                                        width: 60px;
+                                    }
+                                    .inside_messages_profile{
+                                    
+                                    }
+                                }
+                            }
+                            
+                            .inside_messages_middle{
+                                padding-top: 45px;
+                                padding-bottom: 20%;
+                                .profile_messages_left{
+                                
+                                }
+                                .profile_messages_right{
+                                
+                                }
+                            }
+                            .inside_messages_bottom{
+                                width: 330px !important;
+                                form{
+                                    width: 74% !important;
+                                    .write_message{
+                                        width: 76% !important;
+                                    }
+                                    .send_button{
+                                        width: 21% !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        .content_menu{
+            // padding-top: 1% !important;
+            // padding-bottom: 0% !important;
+            .container{
+                max-width: none;
+           
+            .col-md-6{
+                .contain{
+                    margin-right: -15px;
+                        margin-left: -15px;
+                   
+                    .inside_messages{
+                        width: 100%;
+                   
+                        .inside_messages_top{
+                            width: 100% !important;
+                            top: 45px;
+                            display: none;
+                            .inside_messages_profile{
+            
+                            }
+                        }
+                       
+                        
+                    
+                        .inside_messages_middle{
+                            padding-top: 45px;
+                            padding-bottom: 60px;
+                            .profile_messages_left{
+                                margin: 2px 0px !important;
+                                .container{
+                                    padding: 0px 12px;
+                                    .profile_messages_left_image{
+                                        img{
+                                            box-shadow: none;
+                                        }
+                                    }
+                                    .profile_messages_left_title {
+                                        p {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            .profile_messages_right{
+                                margin: 2px 0px !important;
+                                .container{
+                                    padding: 0px 12px;
+                                    .profile_messages_right_image{
+                                        img{
+                                            box-shadow: none;
+                                        }
+                                    }
+                                    .profile_messages_right_title {
+                                        p {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                        .inside_messages_bottom{
+                            width: 100% !important;
+                            bottom: 0px !important;
+                            .smails-content{
+                                i{
+                                    
+                                }
+                            }
+                           form{
+                              width: 84% !important;
+                              .write_message{
+                                   width: 84% !important;
+                                   font-size: 16px !important;
+                               }
+                               .send_button{
+                                width: 13% !important;
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+      
+        }
+       }
+    }
+   
+}
+
+
+@media screen and (max-width: 672px) {
+    .content_menu{
+        // padding-top: 1% !important;
+        // padding-bottom: 0% !important;
+        .container{
+            max-width: none;
+       
+        .col-md-6{
+            .contain{
+                margin-right: -15px;
+                    margin-left: -15px;
+               
+                .inside_messages{
+                    width: 100%;
+                    .inside_messages_top{
+                        width: 100% !important;
+                        top: 45px;
+                    }
+                    .inside_messages_middle{
+                        padding-top: 30px;
+                        padding-bottom: 17%;
+                        .profile_messages_left{
+                           
+                        }
+                        .profile_messages_right{
+                           
+                        }
+                    }
+                    .inside_messages_bottom{
+                        width: 100% !important;
+                        bottom: 0px !important;
+                        
+                       form{
+                          width: 81% !important;
+                          .write_message{
+                            width: 84% !important;
+                            font-size: 16px !important;
+                            }
+                            .send_button{
+                            width: 13% !important;
+                            }
+                       }
+                    }
+                }
+            }
+        }
+  
+    }
+ }
+}
+
+@media screen and (max-width: 576px) {  
+    body{
+        .content_menu {
+            // padding-top: 4% !important;
+            // padding-bottom: 0% !important;
+            .container {
+                .col-md-6 {
+                    .contain {
+                        margin-right: -15px;
+                        margin-left: -15px;
+                       
+                        .inside_messages{
+                        
+                            max-width: 100%;
+                            .inside_messages_top{
+                                .inside_messages_profile{ 
+                                }
+                            }
+                            
+                            
+                            .inside_messages_middle{
+                                padding-top: 30px;
+                              
+                             
+                                .profile_messages_left{
+                                   
+                                }
+                                .profile_messages_right{
+                                  
+                                }
+                            }
+                            .inside_messages_bottom{
+                                width: 100%;
+                               form{
+                                   width: 80% !important;
+                                   .write_message{
+                                    width: 80% !important;
+                                    font-size: 16px !important;
+                                    }
+                                    .send_button{
+                                    width: 18% !important;
+                                    }
+                               }
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 466px) {  
+    .content_menu {
+        // padding-top: 4% !important;
+        // padding-bottom: 0% !important;
+        .container {
+            .col-md-6 {
+                .contain {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                   
+                    .inside_messages{
+                    
+                        max-width: 100%;
+                        .inside_messages_top{
+                            .inside_messages_profile{ 
+                            }
+                        }
+                        .inside_messages_middle{
+                            padding-top: 30px;
+                          
+                            .profile_messages_left{
+                               
+                            }
+                            .profile_messages_right{
+                              
+                            }
+                        }
+                        .inside_messages_bottom{
+                            width: 100%;
+                           form{
+                               width: 77% !important;
+                               
+                           }
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+@media screen and (max-width: 356px) {
+    body{
+        .content_menu {
+            // padding-top: 7% !important;
+            // padding-bottom: 0% !important;
+            .container {
+              
+                .col-md-6 {
+                    .contain {
+                        margin-right: -15px;
+                        margin-left: -15px;
+                      
+                        .inside_messages{ 
+                      
+                            .inside_messages_top{
+                                .geriye{
+                                    img{
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+                                    a{
+                                        font-size: 11px;
+                                    }
+                                }
+                                .inside_messages_profile{
+                                   
+                                }
+                            }
+                           
+                            
+                            .inside_messages_middle{
+                                padding-top: 30px;
+                                .profile_messages_left{
+                                   
+                                }
+                                .profile_messages_right{
+                                   
+                                }
+                            }
+                            .inside_messages_bottom{
+                                width: 100%;
+                                .smails-content{
+                                    i{
+                                        margin-left: 5px;
+                                    }
+                                }
+                                form{
+                                    width: 70% !important;
+                                    .write_message{
+                                        width: 72% !important;
+                                        font-size: 16px !important;
+                                        }
+                                        .send_button{
+                                        width: 23% !important;
+                                        }
+                                }
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+    
+    
+}

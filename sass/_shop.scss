@@ -1,0 +1,118 @@
+.shop_content{
+    .contain_bottom {
+        min-height: 85vh;
+        background: white;
+        p {
+            padding-top: 10px;
+            margin-left: 6%;
+            color: black;
+            margin-bottom: 4px;
+            span {
+                color: black;
+                font-weight: 600;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+                margin-bottom: 1%;
+            }
+        }
+        a {
+            color: #6f8ba6;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 6%;
+            text-decoration: none;
+            
+        }
+        hr {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        ul {
+            padding-bottom: 10px;
+            list-style: none;
+            padding-left: 0px;
+            li {
+                padding: 6px 0px 6px 0px;
+                cursor: pointer;
+                a {
+                    color: #6f8ba6;
+                    text-decoration: none;
+                    font-size: 14px;
+                    
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 3%;
+                    }
+                }
+            }
+            li:hover {
+                background: #dcdddf;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shop_content{
+        padding-top: 30px;
+        .contain_bottom {
+            min-height: 85vh;
+            background: white;
+            p {
+                padding-top: 10px;
+                margin-left: 6%;
+                color: black;
+                margin-bottom: 4px;
+                span {
+                    color: black;
+                    font-weight: 600;
+                }
+                img {
+                    width: 16px;
+                    height: 16px;
+                    margin-bottom: 1%;
+                }
+            }
+            a {
+                color: #6f8ba6;
+                text-decoration: none;
+                font-size: 14px;
+                margin-left: 6%;
+                text-decoration: none;
+                
+            }
+            hr {
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            ul {
+                padding-bottom: 10px;
+                list-style: none;
+                padding-left: 0px;
+                li {
+                    padding: 6px 0px 6px 0px;
+                    cursor: pointer;
+                    a {
+                        color: #6f8ba6;
+                        text-decoration: none;
+                        font-size: 14px;
+                        
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 3%;
+                        }
+                    }
+                }
+                li:hover {
+                    background: #dcdddf;
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NETLOG</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar_left">
+                <div class="navbar_menu">
+                    <img id="menuclick" src="img/navbar_menu.png" alt="">
+                </div>
+                <div class="navbar_geri">
+                    <a href="#">
+                        <img src="img/navbar_back.png" alt=""> </a>
+                </div>
+
+                <div class="logo_navbar">
+                    <a class="navbar-brand" href="#">NETLOG</a>
+                </div>
+            </div>
+            <div class="navbar_center">
+                    <div class="navbar_logo">
+                            <div class="logo_navbar_mobile">
+                                    <a class="navbar-brand" href="#">NETLOG</a>
+                            </div>
+                            <div class="search_navbar">
+                                    <img src="img/search1.png" alt="">
+                                    <input type="text" name="search" placeholder="Axtarış...">
+                            </div>
+                    </div>
+                   
+            </div>
+            <div class="navbar_right">
+                <div class="navbar_mobile_right">
+                    <div class="dropdown">
+                        <img id="dropdownclick" src="img/navbar_down.png" alt="">
+                        <span></span>
+                        <img id="dropupclick" src="img/navbar_up.png" alt="">
+                    </div>
+                    <div class="navbar_dots">
+                        <img src="img/navbar_dots.png" alt="">
+                        <div class="navbar_dots-content">
+                            <ul>
+                                <li>
+                                    <a href="">Bütün Mesajllar</a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="">Oxunmamışlar</a>
+                                </li>
+                                <hr>
+                                <li>
+                                    <a href="">Vacib Mesajlar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons_navbar">
+                    <a href="news.html">
+                        <div class="single_icon">
+                            <img src="img/news_navbar.png" alt="">
+                            <span>2</span>
+                        </div>
+                    </a>
+                    <a href="messages.html">
+                        <div class="single_icon">
+
+                            <img src="img/message_navbar.png" alt="">
+                            <span>6</span>
+                        </div>
+                    </a>
+                    <a href="friends.html">
+                        <div class="single_icon">
+                            <img src="img/friend_navbar.png" alt="">
+                            <span>1</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="single_icon">
+                            <img src="img/foot_navbar.png" alt="">
+                            <span>9</span>
+                        </div>
+                    </a>
+                    <a href="notifications.html">
+                        <div class="single_icon">
+                            <img src="img/notification_navbar.png" alt="">
+                            <span>3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="icons_content_mobile">
+        <div class="single_icon">
+            <a href="">
+                <img src="img/news_navbar.png" alt="">
+                <span>2</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/notification_navbar.png" alt="">
+                <span>3</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/message_navbar.png" alt="">
+                <span>6</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/friend_navbar.png" alt="">
+                <span>1</span>
+            </a>
+        </div>
+        <div class="single_icon">
+            <a href="">
+                <img src="img/foot_navbar.png" alt="">
+                <span>9</span>
+            </a>
+        </div>
+    </div>
+
+    <section class="content_menu">
+        <!----------- modalMiniComplain ----------->
+        <div id="modalMiniComplain" class="modalMini">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Şikayət
+                            etmək</h6>
+                        <span class="closeMini">×</span>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-send">Göndər</button>
+                    </div>
+                </div>
+            </div>
+            <!----------- END ----------->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-xl-3">
+                    <div class="contain">
+                        <div class="sidebar">
+                            <div class="sidenav">
+                                <div class="profile_sidebar">
+                                    <div class="container">
+                                        <div class="profile_sidebar_full">
+                                                <div class="profile_sidebar_left">
+                                                        <div class="profile_image">
+                                                                <img src="img/anar.jpg" alt="">
+                                                            </div>
+                                                            <div class="profile_title">
+                                                                <a href="profile_other.html">Anar</a>
+                                                                <p>Meshguldur</p>
+                                                            </div>
+                                                </div>
+                                                <div class="profile_sidebar_right">
+                                                    <p>Hesab:
+                                                            <span>0</span>
+                                                            <img src="img/netcoin.png" alt="">
+                                                    </p>
+                                                    <a href="">Artırmaq</a>
+                                                </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                            <a href="shop.html">
+                                                <img src="img/shop.png" alt=""> Mağaza
+                                            </a>
+        
+                                    </li>
+                                    <li>
+                                        <a href="news.html">
+                                            <img src="img/news.png" alt=""> Xəbərlər
+                                            <span>2</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="notifications.html">
+                                            <img src="img/notification_sidebar.png" alt=""> Bildirişlər
+                                            <span>3</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="messages.html">
+                                            <img src="img/message.png" alt=""> Mesajlar
+                                            <span>6</span>
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="friend_search.html">
+                                            <img src="img/search.png" alt=""> Dost axtar</a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="friends.html">
+                                            <img src="img/friends.png" alt=""> Dostlarım
+                                            <span>1</span>
+                                        </a>
+                                    </li>
+
+
+
+                                    <li>
+                                        <a href="guests.html">
+                                            <img src="img/foot_sidebar.png" alt=""> Qonaqlar
+                                            <span>9</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="photos.html">
+                                            <img src="img/photo.png" alt=""> Şəkillərim</a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="settings.html">
+                                            <img src="img/settings.png" alt=""> Sazlamalar</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#contact">
+                                            <img src="img/logout.png" alt=""> Çıxış</a>
+                                    </li>
+
+                                </ul>
+                                <footer class="footer_sidebar">
+                                    <div class="container">
+                                        <div class="footer_sidebar_flex">
+                                            <div class="footer_sidebar_left">
+                                                <div class="dropup show">
+                                                    <a class="btn btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Əlavə</a>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Qaydalar</a>
+                                                        <a class="dropdown-item" href="#">Kömək</a>
+                                                        <a class="dropdown-item" href="#">Əlaqə</a>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="">Qaydalar</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Haqqimizda</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Elaqe</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                                <div class="footer_sidebar_right">
+                                                    <div class="footer_copyright">
+                                                        <p> &#169; NETLOG</p>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                    <div class="contain">
+                        <div class="news_content">
+                            <div class="news_top">
+                                <div class="share">
+                                    <div class="container">
+                                    <div class="share_header">
+                                        <p>Paylaşım et</p>
+                                    </div>
+                                    <div class="share_bottom">
+                                        <form action="" method="get">
+                                                <div class="share_middle">
+                                                        <textarea class="form-control" name="" id="" cols="30" rows="1"></textarea>
+                                                    </div>
+                                                    <div class="share_footer">
+                                                        <div class="share_footer_left">
+                                                                <button type="submit" class="btn btn-primary">Göndər</button>
+                                                                <label for="files" class="btn"><img src="img/send_photo.png" alt=""></label>
+                                                                <input id="files" accept=".jpg, .jpeg, .png" type="file" multiple>
+                                                        </div>
+                                                        <div class="share_footer_right">
+                                                            <img src="img/worldwide.png" alt="">
+                                                        </div>
+                                                    </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="news_middle">
+                                    <div class="news">
+                                            <div class="container">
+                                                <div class="news_header">
+                                                        <div class="news_profile">
+                                                                <div class="news_profile_image">
+                                                                    <img src="img/n.png" alt="">
+                                                                </div>
+                                                                <div class="news_profile_title">
+                                                                    <a href="">NETLOG</a>
+                                                                    <p>Online: dünən saat 21:43</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="other_function">
+                                                                <div class="dropdown">
+                                                                        <img class="dropdown-toggle" data-toggle="dropdown" src="img/dots.png" alt="">
+                                                                        <ul class="dropdown-menu ul_mobile">
+                                                                          <li><a href="#">Düzəliş etmək</a></li>
+                                                                          <li><a href="#">Silmək</a></li>
+                                                                        </ul>
+                                                                      </div>
+                                                        </div>
+                                                </div>
+                                                <div class="news_title">
+                                                    <p>Уже 15 июня стадион "Санкт-Петербург" примет свой первый матч #ЧМ2018🙌 А
+                                                        сегодня
+                                                        на арене в Питере тоже была отличная атмосфера👇</p>
+                                                </div>
+                                                <div class="news_image">
+                                                    <img src="img/russia.jpg" alt="">
+                                                </div>
+                                                <div class="news_info">
+                                                    <div class="like_comment">
+                                                        <img src="img/like_post.png" alt="">
+                                                    </div>
+                                                    <div class="complaint">
+                                                        <a href="#" onclick="showDetails(this)"
+                                                        data-modal-type="modalMiniComplain">Şikayət et</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="news">
+                                            <div class="container">
+                                                <div class="news_header">
+                                                        <div class="news_profile">
+                                                                <div class="news_profile_image">
+                                                                    <img src="img/n.png" alt="">
+                                                                </div>
+                                                                <div class="news_profile_title">
+                                                                    <a href="">NETLOG</a>
+                                                                    <p>Online: dünən saat 21:43</p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="other_function">
+                                                                    <div class="dropdown">
+                                                                            <img class="dropdown-toggle" data-toggle="dropdown" src="img/dots.png" alt="">
+                                                                            <ul class="dropdown-menu">
+                                                                              <li><a href="#">Düzəliş etmək</a></li>
+                                                                              <li><a href="#">Silmək</a></li>
+                                                                            </ul>
+                                                                          </div>
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="news_title">
+                                                    <p>Barcelona - Real Madrid</p>
+                                                </div>
+                                                <div class="news_image">
+                                                    <img src="img/barcelona_realmadrid.jpg" alt="">
+                                                </div>
+                                                <div class="news_info">
+                                                        <div class="like_comment">
+                                                            <img src="img/like_post.png" alt="">
+                                                        </div>
+                                                        <div class="complaint">
+                                                            <a href="#" onclick="showDetails(this)"
+                                                            data-modal-type="modalMiniComplain">Şikayət et</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-xl-3">
+                    <div class="contain2">
+                        <div class="contain_up">
+                            <ul id="navi">
+                                <li class="mesajlar_li active">
+                                    <a href="#">Bütün Xəbərlər</a>
+                                </li>
+                                <li class="mesajlar_li">
+                                    <a href="#">Yeni Xəbərlər</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="contain_bottom">
+                            <p>Sizin hesab:
+                                <span>0</span>
+                                <img src="img/coin.png" alt=""> </p>
+                            <a href="">Balans artırmaq</a>
+                            <hr>
+
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/crown.png" alt="">VIP statusu</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/invisible.png" alt="">Gorünməzlik</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/gift.png" alt="">Hədiyyələr</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/money.png" alt="">Pul göndər</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/nickname.png" alt="">Ləqəb Dəyişmək</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/like.png" alt="">VİP Like</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+
+</html>

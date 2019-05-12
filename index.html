@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NETLOG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-index">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">VK-LOGO</a>
+        </div>
+    </nav>
+    <section class="content_home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="text">
+                        <br />
+                        <img src="img/home_pictures.png" alt="" class="responsive">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="login">
+                        <form action="" id="login_form">
+                            <div class="container ">
+                                <center>
+                                    <h6>Yeni dostlar tapmaq ucun dogru unvan</h6>
+                                </center>
+                                <hr>
+                                <div class="error_login">
+                                    Daxil etdiyiniz melumatlar yanlisdir
+                                </div>
+                                <input type="text" placeholder="Ləqəb" name="username" required>
+                                <input type="password" placeholder="Şifrə" name="password" required>
+                                <button class="sign_in" type="submit">Daxil ol</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Yadda saxla
+                                </label>
+                            </div>
+                        </form>
+                        <div class="forget_password">
+                            <div class="container">
+                                <a href="#">Şifrəni unutmusunuz?</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="buttons">
+                            <div class="container">
+                                <button id="facebook" type="submit"> <img src="img/facebook.png" alt="">
+                                    Facebook ilə daxil ol</button>
+                                <button class="button_medium" id="registration" type="submit">Qeydiyyatdan keçmək</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration">
+                        <form action="" id="register_form">
+                            <div class="container">
+                                <center>
+                                    <h6>Qeydiyyat</h6>
+                                </center>
+                                <hr>
+                                <div class="error_register">
+                                    Zehmet olmasa melumatlari duzgun yazin
+                                </div>
+                                <input type="text" placeholder="Sizin Adınız" name="username" required>
+                                <input type="password" placeholder="Sizin Soyadınız" name="password" required>
+                                <label>Doğum tarixi</label>
+                                <select name="day" id="">
+                                    <option value='0'>gun</option>
+                                    <option value='1'>1</option>
+                                    <option value='2'>2</option>
+                                    <option value='3'>3</option>
+                                    <option value='4'>4</option>
+                                    <option value='5'>5</option>
+                                    <option value='6'>6</option>
+                                    <option value='7'>7</option>
+                                    <option value='8'>8</option>
+                                    <option value='9'>9</option>
+                                    <option value='10'>10</option>
+                                    <option value='11'>11</option>
+                                    <option value='12'>12</option>
+                                    <option value='13'>13</option>
+                                    <option value='14'>14</option>
+                                    <option value='15'>15</option>
+                                    <option value='16'>16</option>
+                                    <option value='17'>17</option>
+                                    <option value='18'>18</option>
+                                    <option value='19'>19</option>
+                                    <option value='20'>20</option>
+                                    <option value='21'>21</option>
+                                    <option value='22'>22</option>
+                                    <option value='23'>23</option>
+                                    <option value='24'>24</option>
+                                    <option value='25'>25</option>
+                                    <option value='26'>26</option>
+                                    <option value='27'>27</option>
+                                    <option value='28'>28</option>
+                                    <option value='29'>29</option>
+                                    <option value='30'>30</option>
+                                    <option value='31'>31</option>
+                                </select>
+                                <select name="month" id="">
+                                    <option value='0'>ay</option>
+                                    <option value='1'>Yanvar</option>
+                                    <option value='2'>Fevral</option>
+                                    <option value='3'>Mart</option>
+                                    <option value='4'>Aprel</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>Iyun</option>
+                                    <option value='7'>Iyul</option>
+                                    <option value='8'>Avqust</option>
+                                    <option value='9'>Sentyabr</option>
+                                    <option value='10'>Oktyabr</option>
+                                    <option value='11'>Noyabr</option>
+                                    <option value='12'>Dekabr</option>
+                                </select>
+                                <select name="year" id="">
+                                    <option value='0'>il</option>
+                                    <option value='1'>2018</option>
+                                    <option value='2'>2017</option>
+                                    <option value='3'>2016</option>
+                                    <option value='4'>2015</option>
+                                    <option value='5'>2014</option>
+                                    <option value='6'>2013</option>
+                                    <option value='7'>2012</option>
+                                    <option value='8'>2011</option>
+                                    <option value='9'>2010</option>
+                                    <option value='10'>2009</option>
+                                    <option value='11'>2008</option>
+                                    <option value='12'>2007</option>
+                                    <option value='13'>2006</option>
+                                </select>
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender"> Kişi
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender"> Qadın
+                                </label>
+                                <button id="btn_submit" type="submit">Təsdiqlə</button>
+                            </div>
+                        </form>
+                        <div class="account_has">
+                            <div class="container">
+                                <p>Sizin artıq hesabınız var?</p>
+                                <a href="">Daxil ol</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer_content">
+                        <ul>
+                            <li>
+                                <a href="">Qaydalar</a>
+                            </li>
+                            <li>
+                                <a href="">Haqqimizda</a>
+                            </li>
+                            <li>
+                                <a href="">Elaqe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer_copyright">
+                        <p> &#169; Vkontakte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

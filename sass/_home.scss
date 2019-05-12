@@ -1,0 +1,402 @@
+
+
+body {
+    background: #edeef0;
+
+    .spinner {
+        width: 100%;
+        height: 24px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .spinner>div {
+        background-color: white;
+        height: 100%;
+        width: 4px;
+        display: inline-block;
+        -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }
+    .spinner .rect2 {
+        -webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+    }
+    .spinner .rect3 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+    }
+    .spinner .rect4 {
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+    }
+    .spinner .rect5 {
+        -webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+    }
+    @-webkit-keyframes sk-stretchdelay {
+        0%,
+        40%,
+        100% {
+            -webkit-transform: scaleY(0.4)
+        }
+        20% {
+            -webkit-transform: scaleY(1.0)
+        }
+    }
+    @keyframes sk-stretchdelay {
+        0%,
+        40%,
+        100% {
+            transform: scaleY(0.4);
+            -webkit-transform: scaleY(0.4);
+        }
+        20% {
+            transform: scaleY(1.0);
+            -webkit-transform: scaleY(1.0);
+        }
+    }
+   
+    .navbar-index {
+        background: #4a76a8;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        a {
+         
+            color: white;
+        }
+    }
+    .content_home {
+        padding-top: 3%;
+        padding-bottom: 2%;
+        button {
+            background-color: #4a76a8;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%; // margin-right: 15%;
+            border-radius: 5px;
+            
+        }
+        
+    
+        .button_medium{
+            height: 44px;
+        }
+    
+        button:focus {
+            outline: none;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        button:disabled {
+            cursor: default;
+            opacity: 0.8;
+        }
+    
+        
+        .col-md-8 {
+            .text {
+                margin-top: 30px;
+                margin-right: 5%;
+                text-align: center;
+                h4 {
+                    margin-bottom: 2%;
+                }
+                p {
+                    margin-bottom: 7%;
+                }
+                .responsive {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .col-md-4 {
+            .login {
+                background: white;
+                margin-top: 30px;
+                padding-bottom: 10px;
+                box-shadow: 0px 0px 35px #c1b6b6;
+                border-radius: 5px;
+                form {
+                    .container {
+                        padding-top: 16px;
+                        .error_login {
+                            display: none;
+                            color: #ff0000;
+                            text-align: center;
+                        }
+                        input[type=text],
+                        input[type=password] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                        }
+                        .sign_in{
+                            width: 40%;
+                            vertical-align: middle;
+                        }
+                        label{
+                            margin-left: 15%;
+                        }
+                        
+                    }
+                }
+                
+                .buttons {
+                    #facebook{
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 30%;
+                            left: 13%;
+                            color: black;
+                            z-index: 1;
+                        }
+                    }
+                    #registration {
+                        background: #4caf50;
+                    }    
+                }
+            }
+            .registration {
+                border-radius: 5px;
+                display: none;
+                background: white;
+                margin-top: 30px;
+                box-shadow: 0px 0px 35px #c1b6b6;
+                form {
+                    .container {
+                        padding: 16px;
+                        padding-bottom: 0px !important;
+                        h6 {
+                            text-align: center;
+                        }
+                        .error_register {
+                            color: red;
+                            text-align: center;
+                            display: none;
+                        }
+                        input[type=text],
+                        input[type=password] {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                        }
+                        label {
+                            display: block;
+                        }
+                        select {
+                            width: 31%;
+                            margin-left: 1%;
+                            height: 40px;
+                            overflow-y: scroll;
+                            color: rgb(124, 127, 130);
+                            border-radius: 5px;
+                        }
+                        .radio-inline {
+                            margin-right: 20%;
+                            margin-top: 4%;
+                        }
+                        
+                       
+                    }
+                }
+                .account_has{
+                    p {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        padding-bottom: 2%;
+        hr{
+            margin-top: 0px;
+        }
+        .row{
+            .footer_content {
+                text-align: left;
+                ul {
+                    color: black;
+                    list-style: none;
+                    margin-bottom: 0px;
+                    li {
+                        display: inline-block;
+                        margin-right: 20%;
+                        a {
+                            color: #2a5885;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .footer_copyright {
+                text-align: right;
+                p {
+                    color: black;
+                    padding-top: 3%;
+                    font-size: 14px;
+                  
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        .content_home {
+            padding-top: 11% !important;
+            .container {
+                background: white;
+                .col-md-8 {
+                    .text{
+                    display: none;                        
+                    }
+                }
+                .col-md-4 {
+                    .login {
+                        box-shadow: none;                        
+                        margin-bottom: 10px;
+                        form {
+                            .container {
+                                padding-right: 0px !important;
+                                padding-left: 0px !important;
+                            }
+                        }
+                        .buttons{
+                            .container{
+                                padding-right: 0px !important;
+                                padding-left: 0px !important;
+                            }
+                            
+                        }
+                    }
+                    .registration {
+                        box-shadow: none;                        
+                        form {
+                            border: none;
+                            .container {
+                                padding-right: 0px !important;
+                                padding-left: 0px !important;
+                                padding-bottom: 0px !important;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            height: 100%;
+            .footer_content {
+                ul {
+                    line-height: 30px;
+                    list-style: none;
+                    text-align: center;
+                    padding-left: 0px;
+                    li {
+                        padding-right: 20px;
+                        margin: 0px !important;
+                    }
+                }
+            }
+            .footer_copyright {
+                p {
+                    padding-top: 0%;
+                    text-align: center;
+                    padding-right: 0px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    body {
+        .content_home {
+            padding-top: 11% !important;
+            .container {
+                background: white;
+                .col-md-8 {
+                    .text{
+                      display: none;                        
+                    }
+                }
+                .col-md-4 {
+                    .login {
+                        box-shadow: none;                                                
+                        margin-bottom: 10px;
+                        form {
+                            .container {
+                                padding-right: 0px !important;
+                                padding-left: 0px !important;
+                                
+                            }
+                        }
+                        .buttons{
+                            .container{
+                                padding-right: 0px !important;
+                                padding-left: 0px !important;
+                            }
+                            
+                        }
+                    }
+                    .registration {
+                        box-shadow: none;                                                
+                        form {
+                            border: none;
+                            .container {
+                                padding-right: 0px !important;
+                                padding-left: 0px !important;
+                                padding-bottom: 0px !important;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            height: 100%;
+            .footer_content {
+                ul {
+                    line-height: 30px;
+                    list-style: none;
+                    text-align: center;
+                    padding-left: 0px;
+                    li {
+                        padding-right: 15px;
+                        margin: 0px !important;
+                    }
+                }
+            }
+            .footer_copyright {
+                p {
+                    padding-top: 0%;
+                    text-align: center;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

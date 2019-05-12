@@ -1,0 +1,99 @@
+.help_menu{
+    padding-top: 80px;
+    .help_sidebar{
+        .help_ul{
+            padding-left: 0px;
+             list-style: none;
+              margin-bottom: 0px;
+              text-align: center;
+            li{
+                border-bottom: 1px solid #cfcfcf;
+                display: block;
+                color: #4a76a8;
+                font-size: 15px;
+                text-decoration: none;
+                padding: 20px 10px;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                }
+            }
+            li:last-child {
+                border-bottom: none;
+              }
+            .active{
+                a{
+                 color: black;
+    
+                }
+            }
+        }
+        
+    }
+    
+    .a_tags{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        .a_menu{
+            display: none;
+            margin-top: 10px;
+        }
+        .a_next{
+            display: none;
+            margin-top: 10px;        
+        }
+    }
+    .help_content{
+        padding: 15px;
+        border-radius: 10px;
+        background: white;
+        h5{
+            margin-bottom: 10px;
+        }
+        p{
+            color: #4c4c4c;
+            font-size: 15px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .help_menu{
+        padding-top: 50px;
+        .row{
+            .help_sidebar{
+                .help_ul{
+                    .active{
+                        a{
+                         color: #007bff;;
+                        }
+                    }
+                }
+                .a_tags{
+                    
+                    .a_menu{
+                        a{
+                            margin-bottom: 0px;
+                        }
+                    }
+                    .a_next{
+                        a{
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            .help_content{
+            }
+        }
+    }
+   .footer{
+    .footer_copyright{
+        text-align: center !important;
+    }
+   }
+    
+}

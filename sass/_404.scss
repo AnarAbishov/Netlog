@@ -1,0 +1,29 @@
+.navbar-index {
+    background: #4a76a8;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    a {
+     
+        color: white;
+    }
+}
+
+.content_404 {
+    padding-top: 3%;
+    padding-bottom: 2%;
+    .not_found_404{
+        margin-top: 50px;
+        text-align: center;
+        h1{
+            font-size: 120px;
+            color: #4a76a8;
+        }
+        p{
+            font-size: 13px;
+            margin-top: 15px;
+            color: #4a4a4a;
+        }
+    }
+}
+

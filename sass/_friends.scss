@@ -1,0 +1,365 @@
+body {
+   
+    .content_menu {
+        // padding-top: 5%;
+      
+        .col-md-6 {
+            .friends_content {
+                width: 100%;
+                border-radius: 5px;
+                background: white;
+                 
+                    .search-container {
+                        position: fixed;
+                        z-index: 1;
+                        width: 540px;
+                        margin-top: -50px;
+                        padding-top: 50px;
+                        background-color: #edeef0;
+                        .search {
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            border-bottom: 1px solid #dfdbdb;
+                            background-color: white;
+                            img {
+                                margin-bottom: 0.4%;
+                                margin-left: 2%;
+                                width: 16px; 
+                            }
+                            input {
+                                width: 90%;
+                                border-width: 0px;
+                                padding-top: 13px;                                
+                                padding-bottom: 7px;
+                                font-size: 14px;
+                                color: gray !important;
+                            }
+                            input:focus {
+                                outline: none;
+                            }
+                            input::placeholder {
+                                color: #b0acac;
+                            }
+                            hr {
+                                margin-top: 2%;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    .friends {
+                        padding-top: 45px;
+                        min-height: 90vh;
+                        .profile_friends {
+                            border-bottom: 1px solid #f2f1f1;
+                            padding-bottom: 5px;
+                            .container{
+                                display: flex;
+                                justify-content: space-between;
+                                .friends_left_image_title{
+                                    width: 70%;
+                                    display: inline-block;
+                                    .friends_left_image {
+                                        display: inline-block;
+                                        margin-right: 5px;                                        
+                                        img {
+                                            width: 60px;
+                                            height: 60px;
+                                            box-shadow: 0 0 5px gray;
+                                            margin-top: 6px;
+                                        }
+                                    }
+                                    .friends_left_title {
+                                        display: inline-block;   
+                                        vertical-align: middle;    
+                                        margin-left: 5px;                     
+                                        a {
+                                            font-size: 12px;
+                                            display: inline-block;
+                                            color: #3e7785;
+                                            text-decoration: none;                   
+                                        }
+                                        .online{
+                                            display: inline-block;
+                                            width: 8px;
+                                            height: 8px;
+                                            margin-left: 3px;
+                                            border-radius: 50%;
+                                            background: green;
+                                        }
+                                        p {
+                                            word-wrap: break-word;                         
+                                            color: #6c6b6b;
+                                            font-size: 11px;
+                                            margin-bottom: 0px;
+                                        }
+                                       
+                                    }
+                                }
+                                .friend_search_profile_button {
+                                    width: 30%;
+                                    display: inline-block;
+                                    text-align: right;
+                                    .one_button{
+                                        line-height: 70px;
+                                        .button_modal {
+                                            padding: 5px;
+                                            background: #4a76a8;
+                                            display: inline-block;
+                                            font-size: 11px;
+                                            font-weight: 600;
+                                            &:focus{
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                    .two_button{
+                                        line-height: 70px;
+                                        .btn-yes {
+                                            padding: 7px;
+                                            background: #25e54d;
+                                            display: inline-block;
+                                            font-size: 11px;
+                                            border: none;
+                                            margin: 0px 1px;
+                                            font-weight: 600;
+                                            &:focus{
+                                                box-shadow: none;
+                                            }
+                                        }
+                                        .btn-no {
+                                            padding: 7px;
+                                            background: #ff5757;
+                                            display: inline-block;
+                                            font-size: 11px;
+                                            border: none;
+                                            margin: 0px 0px;
+                                            font-weight: 600;
+                                            &:focus{
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }  
+            }
+        }
+       
+    }
+}
+
+
+@media screen and (max-width: 1199px) {
+    .content_menu{
+        // padding-top: 6% !important;
+    
+    
+    .col-md-6{
+        .contain{
+            .friends_content{
+                .search-container{
+                    width: 450px;
+                }
+                .friends{
+                    padding-top: 45px;
+                }
+            }
+            
+        }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 991px){
+    .content_menu{
+        // padding-top: 8% !important;
+       
+    
+   
+    .col-md-6{
+        .contain{
+            .friends_content{
+                .search-container{
+                    width: 330px;
+                }
+                .friends{
+                    padding-top: 45px;  
+                    .friends_left_image_title{
+
+                    }    
+                    .friend_search_profile_button{
+                        .two_button{
+                            line-height: 33px !important;
+                        }
+                    }            
+                }
+            }
+          
+        }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .content_menu{
+        // padding-top: 1% !important;
+        // padding-bottom: 0% !important;
+        .container{
+            max-width: none;
+        
+        .col-md-6{
+            .contain{
+                margin-right: -15px;
+                    margin-left: -15px;
+                .friends_content{
+                    max-width: 100%;
+                    padding-top: 50px;
+                        .search-container{
+                            width: 100%;
+                            top: 45px;
+                            .search {
+                                width: 100%;
+                            }
+                        }
+                        .friends {
+                            padding-top: 45px;
+                            .profile_friends{
+                                .container{
+                                    padding: 0px 5px;
+                                    .friends_left_image_title{
+
+                                    }    
+                                    .friend_search_profile_button{
+                                        .two_button{
+                                            line-height: 70px !important;
+                                        }
+                                    } 
+                                }
+                            }
+                               
+                        }
+                }
+            }
+        }
+       
+    }
+ }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .content_menu {
+        // padding-top: 4% !important;
+        // padding-bottom: 0% !important;
+        .container {
+           
+            .col-md-6 {
+                .contain {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    .friends_content {
+                        width: 100%;
+                        padding-top: 50px;
+                        .search-container{
+                            .search {
+                                width: 100%;
+                                input{
+                                    width: 90%;
+                                }
+                            }
+                        }
+                        .friends {
+                            padding-top: 30px;
+                            .profile_friends{
+                                .container{
+                                    .friends_left_image_title{
+                                        width: 70%;
+                                        .friends_left_image{
+                                            
+                                        }
+                                        .friends_left_title{
+
+                                        }
+                                    }
+                                    .friend_search_profile_button{
+                                        width: 36%;
+                                       .one_button{
+
+                                       }
+                                       .two_button{
+                                            line-height: 60px !important;
+                                            .btn-yes{
+                                                padding: 6px;
+                                            }
+                                            .btn-no{
+                                                padding: 6px;
+                                            }
+                                       }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                 
+                }
+            }
+           
+        }
+    }
+}
+
+@media screen and (max-width: 356px) {
+    
+    .content_menu {
+        // padding-top: 7% !important;
+        // padding-bottom: 0% !important;
+        .container {
+            .col-md-6 {
+                .contain {
+                    margin-right: -15px;
+                    margin-left: -15px;
+                    .friends_content {
+                        width: 100%;
+                        padding-top: 50px;
+                        .search-container{                          
+                            .search {
+                                width: 100%;
+                            }
+                        }
+                        .friends {
+                            padding-top: 30px;
+                            .profile_friends{
+                                .container{
+                                    .friends_left_image_title{
+                                    }
+                                    .friend_search_profile_button{
+                                       .one_button{
+
+                                       }
+                                       .two_button{
+                                           float: right;
+                                            .btn-yes{
+                                                display: block;
+                                                margin-bottom: 5px;
+                                            }
+                                            .btn-no{
+                                                display: block;
+                                            }
+                                       }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+            }
+          
+        }
+    }
+}

@@ -1,0 +1,1595 @@
+body {
+    p{
+        word-break: break-all;
+    }
+    span{
+        word-break: break-all;
+    }
+    .content_menu {
+        .col-md-6 {
+            .profile_other_content {
+                width: 100%;
+                border-radius: 5px;
+                .content_profile {
+                    .profile_other {
+                        display: grid;
+                        grid-template-columns: 40% auto;
+                        grid-gap: 10px;
+                        .profile_left{
+                            position: fixed;
+                            width: 216px;
+                            .profile_image {   
+                                position: relative;                          
+                                margin-bottom: 10px;
+                                background: white;
+                                height: auto;
+                                display: inline-block;
+                                padding: 10px;
+                                border-radius: 5px;
+                                .full_image{
+                                    width: 100%;
+                                    height: 100%;
+                                    text-align: center;
+                                    .profile_img {
+                                        width: 100%;
+                                        height: auto;
+                                        margin-bottom: 10px;
+                                        border-radius: 5px;
+                                    
+                                    }
+                                    a{
+                                        cursor: pointer;
+                                        position: absolute;
+                                        bottom: 70px;
+                                        margin: auto;
+                                        left: 0;
+                                        right: 0;
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        color: #6f8ba6;
+                                    }
+                                    #upload{
+                                        display:none;
+                                    }
+                                }
+                                
+                                .basic_info_phone{
+                                    display: none;
+                                    vertical-align: middle;
+                                    margin-left: 10px;
+                                    .profile_title_top {
+                                        .up {
+                                            display: flex;
+                                            justify-content: start;
+                                            h6{
+                                                display: inline-block;
+                                            }
+                                            .online{
+                                                display: inline-block;
+                                                width: 8px;
+                                                height: 8px;
+                                                border-radius: 50%;
+                                                background: green;
+                                                margin-top: 7px;
+                                                margin-left: 7px;
+                                            }
+                                        }
+                                        .middle {
+                                            p {
+                                                font-size: 11px;
+                                                color: gray;
+                                            }
+                                        }
+                                        .down {
+                                            p {
+                                                font-size: 11px;
+                                                color: gray;
+                                            }
+                                        }
+                                    }
+                                }
+                                .button_edit{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    a{
+                                        width: 100%;
+                                        .edit {
+                                            box-shadow: none;
+                                            background: #4a76a8;
+                                            color: white;
+                                            font-size: 12px;
+                                            width: 100%;
+                                            padding: 6px;
+                                        }
+                                    }   
+                                    
+                                }
+                                .button_up{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .message_send {
+                                        box-shadow: none;
+                                        background: #4a76a8;
+                                        color: white;
+                                        font-size: 12px;
+                                        width: 71%;
+                                        padding: 6px;
+                                        img{
+                                            width: 20px;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                   
+                                    .gift_send {
+                                        box-shadow: none;
+                                        background: orange;
+                                        padding: 1px;
+                                        width: 25%;
+                                        img {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+        
+                                    .modal {
+                                        padding-right: 0px !important;
+                                        .modal-header{
+                                            padding: 5px 15px 5px 15px !important;
+                                            background: #4a76a8 !important;
+                                            color: white !important;
+                                            border-top-left-radius: 0px;
+                                            border-top-right-radius: 0px;
+                                            button{
+                                                outline: none;
+                                                span{
+                                                    color: white;
+                                                }
+                                            }
+                                        }
+                                        .modal-body {
+                                            padding: 0px !important;
+                                            max-height: 90vh;
+                                            overflow-y: auto;
+                                            .carousel_gifts_title{
+                                                p{
+                                                    font-size: 13px;
+                                                    margin: 5px 10px 5px 10px;
+                                                }
+                                            }
+                                            .owl-carousel{
+                                                z-index: 0;
+                                                padding: 5px 35px 37px 35px;
+                                                                                 
+                                                .owl-item{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    .item{
+                                                        cursor: pointer;
+                                                        width: 45px;
+                                                        height: 70px;
+                                                        text-align: center;
+                                                        margin-right: 10px;
+                                                        img{
+                                                        width: 65px;
+                                                        height: 65px;
+                                                        
+                                                        }
+                                                        p{
+                                                            padding-top: 5px;
+                                                            font-size: 11px;
+                                                            word-wrap: break-word;
+                                                        }
+                                                    }
+                                                }
+                                                .owl-nav{
+                                                    text-align: inherit;
+                                                    margin-top: -65px;
+                                                    .owl-prev{
+                                                        outline: none;                                            
+                                                        margin-left: -25px;
+                                                        background: #d1d1d1;
+                                                        border-radius: 50%;
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        position: relative;
+                                                        span{
+                                                            position: absolute;
+                                                            top: -3px;
+                                                            left: 8px;
+                                                        }
+                                                    }
+                                                    .owl-next{
+                                                        outline: none;
+                                                        margin-right: -25px;
+                                                        float: right;
+                                                        background: #d1d1d1;
+                                                        border-radius: 50%;
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        position: relative;
+                                                        
+                                                        span{
+                                                            position: absolute;
+                                                            top: -3px;
+                                                            right: 8px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .button_down{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .friend_send {
+                                        box-shadow: none;
+                                        background: green;
+                                        color: white;
+                                        margin-top: 5px;
+                                        font-size: 12px;
+                                        width: 71%;
+                                        padding: 6px;    
+                                        img{
+                                            width: 20px;
+                                            margin-right: 5px;
+                                        }                            
+                                    }
+                                    .dropdown {
+                                        width: 25%;
+                                        display: inline-block;
+                                        .dropdown_button {
+                                            margin-top: 5px;
+                                            box-shadow: none;
+                                            background: red;
+                                            padding: 1px;
+                                            width: 100%;
+                                            height: 34px;
+                                            img {
+                                                width: 24px;
+                                                height: 24px;
+                                            }
+                                        }
+                                        ul {
+                                            padding-left: 0px;
+                                            margin-bottom: 0px;
+                                            li {
+                                                list-style: none;
+                                                cursor: pointer;
+                                                height: 35px;
+                                                line-height: 35px;
+                                                margin-top: -5px;
+                                                a {
+                                                    font-size: 12px;
+                                                    color: black;
+                                                    margin-left: 5%;
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                            li:hover {
+                                                background: #dcdddf;
+                                            }
+                                            hr {
+                                                margin-top: 0px;
+                                                margin-bottom: 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            .profile_friends_gifts{
+                                display: inline-block;
+                                width: 100%;
+                                .title_friends {
+                                    border-radius: 5px;
+                                    background: white;  
+                                    margin-bottom: 10px;
+                                    .title {
+                                        padding: 10px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        p {
+                                            font-size: 11px;
+                                            margin-bottom: 0px;
+                                        }
+                                        .btnMore {
+                                            border: none;
+                                            padding: 0px;
+                                            background: none;
+                                            outline: none;
+                                            box-shadow: none;
+                                            font-size: 12px;
+                                        }
+                                        
+                                    }
+                                    .friends {
+                                        .item {
+                                            cursor: pointer;
+                                            display: inline-block;
+                                            width: calc(100% / 3);
+                                            margin-right: -4px;
+                                            padding: 0px 0px;
+                                            text-align: center;
+                                            a {
+                                                color: #5f5e5e;
+                                                img {
+                                                    width: 45px;
+                                                    height: 45px;
+                                                    border-radius: 50%;
+                                                    margin-bottom: 3px;
+                                                }
+                                                p {
+                                                    font-size: 11px;
+                                                }
+                                            }
+                                        }
+                                        .no_friends{
+                                            height: 38px;
+                                            text-align: center;
+                                            p{
+                                                font-size: 11px;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+                                .title_gifts {  
+                                    border-radius: 5px;
+                                    background: white;                                
+                                                    
+                                    .title {
+                                        padding: 10px; 
+                                        display: flex;
+                                        justify-content: space-between;
+                                        p {
+                                            font-size: 11px;
+                                            margin-bottom: 0px;
+                                        }
+                                        .btnMore {
+                                            border: none;
+                                            padding: 0px;
+                                            background: none;
+                                            outline: none;
+                                            box-shadow: none;
+                                            font-size: 12px;
+                                        }
+                                        .modal {
+                                            padding-right: 0px !important;
+                                            .modal-header{
+                                                padding: 5px 15px 5px 15px !important;
+                                                background: #4a76a8 !important;
+                                                color: white !important;
+                                                border-top-left-radius: 0px;
+                                                border-top-right-radius: 0px;
+                                                #modal_gifts_title{
+                                                    font-size: 14px !important;
+                                                }
+                                                button{
+                                                    outline: none;
+                                                    span{
+                                                        color: white;
+                                                    }
+                                                }
+                                            }
+                                            .modal-body {
+                                                padding: 0px !important;
+                                                max-height: 90vh;
+                                                overflow-y: auto;
+                                                .modal_profiles {
+                                                    
+                                                    .modal_profile {
+                                                        border-bottom: 1px solid #f2f1f1;
+                                                        padding-bottom: 5px;
+                                                        padding-top: 5px;
+                                                        .container {
+                                                        
+                                                            .modal_top_gifts {
+                                                            
+                                                                .friend_search_profile_image {
+                                                                    display: inline-block;
+                                                                    margin-right: 5px;
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                        box-shadow: 0 0 5px gray;
+                                                                        margin-top: 6px;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                }
+                                                                .friend_search_profile_title {
+                                                                    display: inline-block;
+                                                                    vertical-align: middle;
+                                                                    a {
+                                                                        font-size: 13px;
+                                                                        display: inline-block;
+                                                                        color: #3e7785;
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    p {
+                                                                        word-wrap: break-word;
+                                                                        color: #989898;
+                                                                        font-size: 11px;
+                                                                        margin-bottom: 0px;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .modal_middle_gifts {
+                                                                text-align: center;
+                                                                margin-bottom: 10px;
+                                                                img{
+                                                                    width: 128px;
+                                                                    height: 128px;
+                                                                }
+                                                            }
+                                                            .modal_bottom_gifts{
+                                                                text-align: center;
+                                                                padding-bottom: 10px;
+                                                                p{
+                                                                    font-size: 12px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .gifts {
+                                    
+                                        .modal {
+                                            padding-right: 0px !important;
+                                            .modal-header{
+                                                padding: 5px 15px 5px 15px !important;
+                                                background: #4a76a8 !important;
+                                                color: white !important;
+                                                border-top-left-radius: 0px;
+                                                border-top-right-radius: 0px;
+                                                #modal_gifts_title{
+                                                    font-size: 14px !important;
+                                                }
+                                                button{
+                                                    outline: none;
+                                                    span{
+                                                        color: white;
+                                                    }
+                                                }
+                                            }
+                                            .modal-body {
+                                                padding: 0px !important;
+                                                .modal_profiles {
+                                                    .modal_profile {
+                                                        border-bottom: 1px solid #f2f1f1;
+                                                        padding-bottom: 5px;
+                                                        padding-top: 5px;
+                                                        .container {
+                                                        
+                                                            .modal_top_gifts {
+                                                            
+                                                                .friend_search_profile_image {
+                                                                    display: inline-block;
+                                                                    margin-right: 5px;
+                                                                    img {
+                                                                        width: 60px;
+                                                                        height: 60px;
+                                                                        box-shadow: 0 0 5px gray;
+                                                                        margin-top: 6px;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                }
+                                                                .friend_search_profile_title {
+                                                                    display: inline-block;
+                                                                    vertical-align: middle;
+                                                                    a {
+                                                                        font-size: 13px;
+                                                                        display: inline-block;
+                                                                        color: #3e7785;
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    p {
+                                                                        word-wrap: break-word;
+                                                                        color: #989898;
+                                                                        font-size: 11px;
+                                                                        margin-bottom: 0px;
+                                                                    }
+                                                                }
+                                                            }
+                                                            .modal_middle_gifts {
+                                                                text-align: center;
+                                                                margin-bottom: 10px;
+                                                                img{
+                                                                    width: 128px;
+                                                                    height: 128px;
+                                                                }
+                                                            }
+                                                            .modal_bottom_gifts{
+                                                                text-align: center;
+                                                                padding-bottom: 10px;
+                                                                p{
+                                                                    font-size: 12px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .item {
+                                                cursor: pointer;
+                                                display: inline-block;
+                                                width: calc(100% / 3);
+                                                margin-right: -4px;
+                                                padding: 0px 10px;
+                                                text-align: center;
+                                                img {
+                                                    width: 45px;
+                                                    height: 45px;
+                                                    margin-bottom: 3px;
+                                                }
+                                                p {
+                                                    font-size: 11px;
+                                                }
+                                            
+                                        }
+                                        .no_gifts{
+                                            height: 38px;
+                                            text-align: center;
+                                            p{
+                                                font-size: 11px;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+                            } 
+                        }
+                            
+                        .profile_right {
+                                grid-area: 1 / 2 / 5 / 6; 
+                                    .profile_title{
+                                        border-radius: 5px;
+                                        display: grid;
+                                        grid-template-columns: auto;
+                                        grid-gap: 10px;
+                                        background: white;
+                                        height: auto;
+                                        margin-bottom: 10px;
+                                        padding-top: 10px;
+                                        padding-right: 10px;
+                                        padding-bottom: 0px;
+                                        padding-left: 10px;
+                                        
+                                        .profile_title_middle {  
+                                            .basic_info{
+                                                h6{
+                                                    display: inline-block;
+                                                }
+                                                .online{
+                                                    display: inline-block;
+                                                    width: 8px;
+                                                    height: 8px;
+                                                    border-radius: 50%;
+                                                    background: green;
+                                                    margin-top: 7px;
+                                                    margin-left: 7px;
+                                                }
+                                            }                               
+                                            p {
+                                                border-bottom: 1px solid #e9e9e9;
+                                                font-size: 12px;
+                                                color: #525252;
+                                                margin-bottom: 15px;
+                                            }
+                                            #flip{
+                                                cursor: pointer;
+                                                text-align: center;
+                                                font-size: 11px;
+                                                #yuxari{
+                                                    vertical-align: middle;
+                                                    display: inline-block;  
+                                                    width: 24px;   
+                                                    margin-bottom: 2px;                                           
+                                                }
+                                                #ashagi{
+                                                    vertical-align: middle;
+                                                    display: none;
+                                                    width: 24px; 
+                                                    margin-bottom: 2px;  
+                                                }
+
+                                            }
+                                            #panel {
+                                                display: none;
+                                                p {
+                                                    border-bottom: 1px solid #e9e9e9;
+                                                    font-size: 12px;
+                                                    color: #525252;
+                                                    margin-bottom: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    .profile_other_image{
+                                        border-radius: 5px;
+                                        background: white;
+                                        height: auto;
+                                        padding-bottom: 10px;
+                                        .profile_other_image_title{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                padding: 10px;
+                                            p{
+                                                font-size: 11px;
+                                                margin-bottom: 0px;
+                                            }
+                                            .btnMore {
+                                                border: none;
+                                                padding: 0px;
+                                                background: none;
+                                                outline: none;
+                                                box-shadow: none;
+                                                font-size: 12px;
+                                            }
+                                        }
+                                        .profile_other_image_photos{
+                                            padding-left: 12px;
+                                            min-height: 115px;
+                                            .item{
+                                                display: inline-block;
+                                                padding: 2px;
+                                                width: 47%;
+                                                cursor: pointer;
+                                                margin-bottom: 4px;
+                                                img{
+                                                    border-radius: 2px;
+                                                    width: 100%;
+                                                    height: auto;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .profile_title_news{
+                                        height: auto;
+                                        .profile_title_news_top{
+                                            padding: 10px;
+                                            display: flex;
+                                            justify-content: space-between;
+                               
+                                            background: white;
+                                            height: auto;
+                                            padding-bottom: 10px;
+                                            margin-top: 10px;
+                                            p{
+                                                margin-bottom: 0px;
+                                                font-size: 12px;
+                                                font-weight: 600;
+                                                color: #7e7272;
+                                            }
+                                        }
+                                        .profile_title_news_bottom{
+                                            .news{
+                                              
+                                                background: white;
+                                                height: auto;
+                                                padding-bottom: 10px;
+                                                margin-bottom: 10px;
+                                                .news_header{
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    .news_profile{
+                                                        padding: 10px 0px;                                           
+                                                        display: inline-block;                                
+                                                        .news_profile_image{
+                                                            display: inline-block;
+                                                            img {
+                                                                width: 35px;
+                                                                height: 35px;
+                                                                border-radius: 50%;
+                                                                
+                                                            }
+                                                        }
+                                                        .news_profile_title{
+                                                            display: inline-block;
+                                                            vertical-align: middle;  
+                                                            margin-left: 5px;                                  
+                                                            a {
+                                                                font-size: 13px;
+                                                                font-weight: 600;
+                                                                display: inline-block;
+                                                                color: #3e7785;
+                                                                text-decoration: none;  
+                                                                
+                                                            }
+                                                            p {
+                                                                font-size: 11px;
+                                                                margin-bottom: 0px;
+                                                                color: gray;
+                                                            }
+                                                        }
+                                                    }
+                                                    .other_function{
+                                                        .dropdown{
+                                                            img{
+                                                                margin-top: 15px;
+                                                                cursor: pointer;
+                                                                width: 21px;
+                                                            }
+                                                            ul{
+                                                                position: absolute;
+                                                                transform: none !important;
+                                                                top: 35px !important;
+                                                                cursor: pointer;
+                                                                left: auto !important;
+                                                                right: -4px;
+                                                                will-change: transform;
+                                                                background: #ecf5fd;
+                                                                li{
+                                                                    padding-left: 10px;
+                                                                    padding-bottom: 10px;
+                                                                    a{
+                                                                        font-size: 13px;
+                                                                        color: #55606c;
+                                                                        font-weight: 600;
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    &:hover{
+                                                                        background: #d9d9d9;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        
+                                                    }
+                                                }
+                                                .news_title{
+                                                    font-size: 13px;
+                                                }
+                                                .news_image{
+                                                    padding-bottom: 6px;
+                                                    cursor: pointer;
+                                                    img{
+                                                        width: 100%;
+                                                        height: 100%;
+                                                    }
+                                                }
+                                                .news_info{
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    .like_comment{
+                                                        width: 40px;
+                                                        cursor: pointer;
+                                                        img{
+                                                            width: 18px;
+                                                            margin-left: 3px;
+                                                        }
+                                                    }
+                                                    .complaint{
+                                                        a{
+                                                            font-size: 12px;
+                                                            color: #6f8ba6;
+                                                            margin-right: 3px;
+                                                        }
+                                                    }
+                                                }
+                                                
+                                            }
+                                        }
+                                        
+                                    }
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .content_menu{
+        .profile_other_content{
+           .content_profile{
+            .profile_other{
+                .profile_left{
+                    width: 180px !important;
+                }
+                .profile_right{
+
+                }
+            }
+           }
+        }
+  }
+}
+@media screen and (max-width: 991px){
+    .content_menu{
+        .container{
+            max-width: 960px;
+            .profile_other_content{
+                .content_profile{
+                   .profile_other{
+                   
+                     .profile_left{
+                         width: 160px !important;
+                         .profile_image{
+                             .button_up{
+                                 display: block !important;
+                                 .message_send{
+                                     width: 70% !important;
+                                     font-size: 10px !important;
+                                     img{
+                                         width: 16px !important;
+                                         margin-right: 4px !important;
+                                     }
+                                 }
+                                 .gift_send{
+                                     width: 26% !important;
+                                 }
+                             }
+                             .button_down{
+                                 display: block !important;
+                                 .friend_send{
+                                     width: 70% !important;
+                                     font-size: 10px !important;
+                                     img{
+                                         width: 16px !important;
+                                         margin-right: 4px !important;
+                                     }
+                                 }
+                                 .dropdown{
+                                     width: 26% !important;
+                                 }
+                             }
+                         }
+                     }
+                         
+                
+                       .profile_right{
+     
+                       }
+                   }
+                }
+             }
+        }
+        
+  }
+}
+@media screen and (max-width: 768px) {
+    .content_menu{
+        .profile_other_content{
+            padding-top: 40px;
+           
+            .content_profile{
+                .profile_other{
+                      grid-template-columns: auto !important;
+                      width: 100% !important;
+                      .profile_image {
+                          position: relative;
+                          grid-area: 1;
+                          background: white;
+                          height: auto;
+                          display: inline-block;
+                          padding: 10px;
+                          border-radius: 5px;
+                          .full_image{
+                              width: 100%;
+                              height: 100%;
+                              text-align: center;
+                              display: inline;
+                              .profile_img{
+                                  width: 40% !important;
+                                }
+                                a{
+                                  display: inline-block;
+                                  width: 38%;
+                                  margin-left: 11px;
+                                  cursor: pointer;
+                                  position: absolute;
+                                  top: 65%;
+                                  left: 0;
+                                  right: 0;
+                                  font-size: 13px;
+                                  font-weight: 600;
+                                  color: #6f8ba6;
+                                }
+                                #upload{
+                                    display:none;
+                                }
+                          }
+                          
+                          .basic_info_phone{
+                              display: inline-block !important;
+                              width: 50%;
+                              vertical-align: top !important;
+                              margin-left: 5px;
+                              p{
+                                  margin-bottom: 6px;
+                                  font-size: 12px !important;
+                              }
+                          }
+                          .button_edit{
+                              margin-top: 8px;
+                              display: flex;
+                              justify-content: space-between;
+                              a{
+                                  width: 100%;
+                                  .edit {
+                                      box-shadow: none;
+                                      background: #4a76a8;
+                                      color: white;
+                                      font-size: 12px;
+                                      width: 100%;
+                                      padding: 6px;
+                                  }
+                              }
+                             
+                          }
+                          .button_up{
+                              display: flex;
+                              justify-content: space-between;
+                              margin-top: 5px;
+                              .message_send {
+                                  box-shadow: none;
+                                  background: #4a76a8;
+                                  color: white;
+                                  font-size: 12px;
+                                  width: 71%;
+                                  padding: 6px;
+                                  img{
+                                      width: 20px;
+                                      margin-right: 5px;
+                                  }
+                              }
+                             
+                              .gift_send {
+                                  box-shadow: none;
+                                  background: orange;
+                                  padding: 1px;
+                                  width: 28%;
+                                  img {
+                                      width: 24px;
+                                      height: 24px;
+                                  }
+                              }
+                          }
+                          .button_down{
+                              display: flex;
+                              justify-content: space-between;
+                              .friend_send {
+                                  box-shadow: none;
+                                  background: green;
+                                  color: white;
+                                  margin-top: 5px;
+                                  font-size: 12px;
+                                  width: 71%;
+                                  padding: 6px;    
+                                  img{
+                                      width: 20px;
+                                      margin-right: 5px;
+                                  }                            
+                              }
+                              .dropdown {
+                                  width: 28%;
+                                  display: inline-block;
+                                  .dropdown_button {
+                                      margin-top: 5px;
+                                      box-shadow: none;
+                                      background: red;
+                                      padding: 1px;
+                                      width: 100%;
+                                      height: 34px;
+                                      img {
+                                          width: 24px;
+                                          height: 24px;
+                                      }
+                                  }
+                                  ul {
+                                      padding-left: 0px;
+                                      margin-bottom: 0px;
+                                      li {
+                                          list-style: none;
+                                          cursor: pointer;
+                                          height: 35px;
+                                          line-height: 35px;
+                                          margin-top: -5px;
+                                          a {
+                                              font-size: 12px;
+                                              color: black;
+                                              margin-left: 5%;
+                                              text-decoration: none;
+                                          }
+                                      }
+                                      li:hover {
+                                          background: #dcdddf;
+                                      }
+                                      hr {
+                                          margin-top: 0px;
+                                          margin-bottom: 0px;
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                     .profile_friends_gifts {
+                          width: 100%;
+                          grid-area: 4;
+                          .title_friends {
+                              border-radius: 5px;
+                              background: white;  
+                              margin-bottom: 10px;
+                              .title {
+                                  padding: 10px;
+                                  display: flex;
+                                  justify-content: space-between;
+                                  p {
+                                      font-size: 11px;
+                                      margin-bottom: 0px;
+                                  }
+                                  .btnMore {
+                                      border: none;
+                                      padding: 0px;
+                                      background: none;
+                                      outline: none;
+                                      box-shadow: none;
+                                      font-size: 12px;
+                                  }
+                                  
+                              }
+                              .friends {
+                                  .item {
+                                      cursor: pointer;
+                                      display: inline-block;
+                                      width: calc(100% / 3);
+                                      margin-right: -4px;
+                                      padding: 0px 10px;
+                                      text-align: center;
+                                      a {
+                                          color: #5f5e5e;
+                                          img {
+                                              width: 45px;
+                                              height: 45px;
+                                              border-radius: 50%;
+                                              margin-bottom: 3px;
+                                          }
+                                          p {
+                                              font-size: 11px;
+                                          }
+                                      }
+                                  }
+                                  .no_friends{
+                                      height: 38px;
+                                      text-align: center;
+                                  }
+                              }
+                          }
+                          .title_gifts {  
+                              border-radius: 5px;
+                              background: white;                                
+                                              
+                              .title {
+                                  padding: 10px; 
+                                  display: flex;
+                                  justify-content: space-between;
+                                  p {
+                                      font-size: 11px;
+                                      margin-bottom: 0px;
+                                  }
+                                  .btnMore {
+                                      border: none;
+                                      padding: 0px;
+                                      background: none;
+                                      outline: none;
+                                      box-shadow: none;
+                                      font-size: 12px;
+                                  }
+                                  .modal {
+                                      padding-right: 0px !important;
+                                      .modal-header{
+                                          padding: 5px 15px 5px 15px !important;
+                                          background: #4a76a8 !important;
+                                          color: white !important;
+                                          border-top-left-radius: 0px;
+                                          border-top-right-radius: 0px;
+                                          #modal_gifts_title{
+                                              font-size: 14px !important;
+                                          }
+                                          button{
+                                              outline: none;
+                                              span{
+                                                  color: white;
+                                              }
+                                          }
+                                      }
+                                      .modal-body {
+                                          padding: 0px !important;
+                                          max-height: 90vh;
+                                          overflow-y: auto;
+                                          .modal_profiles {
+                                              
+                                              .modal_profile {
+                                                  border-bottom: 1px solid #f2f1f1;
+                                                  padding-bottom: 5px;
+                                                  padding-top: 5px;
+                                                  .container {
+                                                  
+                                                      .modal_top_gifts {
+                                                      
+                                                          .friend_search_profile_image {
+                                                              display: inline-block;
+                                                              margin-right: 5px;
+                                                              img {
+                                                                  width: 60px;
+                                                                  height: 60px;
+                                                                  box-shadow: 0 0 5px gray;
+                                                                  margin-top: 6px;
+                                                                  border-radius: 50%;
+                                                              }
+                                                          }
+                                                          .friend_search_profile_title {
+                                                              display: inline-block;
+                                                              vertical-align: middle;
+                                                              a {
+                                                                  font-size: 13px;
+                                                                  display: inline-block;
+                                                                  color: #3e7785;
+                                                                  text-decoration: none;
+                                                              }
+                                                              p {
+                                                                  word-wrap: break-word;
+                                                                  color: #989898;
+                                                                  font-size: 11px;
+                                                                  margin-bottom: 0px;
+                                                              }
+                                                          }
+                                                      }
+                                                      .modal_middle_gifts {
+                                                          text-align: center;
+                                                          margin-bottom: 10px;
+                                                          img{
+                                                              width: 128px;
+                                                              height: 128px;
+                                                          }
+                                                      }
+                                                      .modal_bottom_gifts{
+                                                          text-align: center;
+                                                          padding-bottom: 10px;
+                                                          p{
+                                                              font-size: 12px;
+                                                          }
+                                                      }
+                                                  }
+                                              }
+                                          }
+                                      }
+                                  }
+                              }
+                              .gifts {
+                              
+                                  .modal {
+                                      padding-right: 0px !important;
+                                      .modal-header{
+                                          padding: 5px 15px 5px 15px !important;
+                                          background: #4a76a8 !important;
+                                          color: white !important;
+                                          border-top-left-radius: 0px;
+                                          border-top-right-radius: 0px;
+                                          #modal_gifts_title{
+                                              font-size: 14px !important;
+                                          }
+                                          button{
+                                              outline: none;
+                                              span{
+                                                  color: white;
+                                              }
+                                          }
+                                      }
+                                      .modal-body {
+                                          padding: 0px !important;
+                                          .modal_profiles {
+                                              .modal_profile {
+                                                  border-bottom: 1px solid #f2f1f1;
+                                                  padding-bottom: 5px;
+                                                  padding-top: 5px;
+                                                  .container {
+                                                  
+                                                      .modal_top_gifts {
+                                                      
+                                                          .friend_search_profile_image {
+                                                              display: inline-block;
+                                                              margin-right: 5px;
+                                                              img {
+                                                                  width: 60px;
+                                                                  height: 60px;
+                                                                  box-shadow: 0 0 5px gray;
+                                                                  margin-top: 6px;
+                                                                  border-radius: 50%;
+                                                              }
+                                                          }
+                                                          .friend_search_profile_title {
+                                                              display: inline-block;
+                                                              vertical-align: middle;
+                                                              a {
+                                                                  font-size: 13px;
+                                                                  display: inline-block;
+                                                                  color: #3e7785;
+                                                                  text-decoration: none;
+                                                              }
+                                                              p {
+                                                                  word-wrap: break-word;
+                                                                  color: #989898;
+                                                                  font-size: 11px;
+                                                                  margin-bottom: 0px;
+                                                              }
+                                                          }
+                                                      }
+                                                      .modal_middle_gifts {
+                                                          text-align: center;
+                                                          margin-bottom: 10px;
+                                                          img{
+                                                              width: 128px;
+                                                              height: 128px;
+                                                          }
+                                                      }
+                                                      .modal_bottom_gifts{
+                                                          text-align: center;
+                                                          padding-bottom: 10px;
+                                                          p{
+                                                              font-size: 12px;
+                                                          }
+                                                      }
+                                                  }
+                                              }
+                                          }
+                                      }
+                                  }
+                                  .item {
+                                          cursor: pointer;
+                                          display: inline-block;
+                                          width: calc(100% / 3);
+                                          margin-right: -4px;
+                                          padding: 0px 10px;
+                                          text-align: center;
+                                          img {
+                                              width: 45px;
+                                              height: 45px;
+                                              margin-bottom: 3px;
+                                          }
+                                          p {
+                                              font-size: 11px;
+                                          }
+                                      
+                                  }
+                                  .no_gifts{
+                                      height: 38px;
+                                      text-align: center;
+                                  }
+                              }
+                          }
+                         }    
+                     
+                       .profile_title {
+                          grid-area: 2; 
+                          border-radius: 5px;
+                          display: grid;
+                          grid-template-columns: auto;
+                          grid-gap: 10px;
+                          background: white;
+                          height: auto;
+                          margin-bottom: 10px;
+                          padding-top: 10px;
+                          padding-right: 10px;
+                          padding-bottom: 0px;
+                          padding-left: 10px;
+                          .profile_title_middle{
+                              .basic_info{
+                                  display: none;
+                                  h6{
+                                    display: inline-block;
+                                  }
+                                  .online{
+                                    display: inline-block;
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 50%;
+                                    background: green;
+                                    margin-top: 7px;
+                                    margin-left: 7px;
+                                }
+                              }
+                              p {
+                                border-bottom: 1px solid #e9e9e9;
+                                font-size: 12px;
+                                color: #525252;
+                                margin-bottom: 15px;
+                            }
+                            #flip{
+                                cursor: pointer;
+                                text-align: center;
+                                font-size: 11px;
+                                #yuxari{
+                                    vertical-align: middle;
+                                    display: inline-block;  
+                                    width: 24px;   
+                                    margin-bottom: 2px;                                           
+                                }
+                                #ashagi{
+                                    vertical-align: middle;
+                                    display: none;
+                                    width: 24px; 
+                                    margin-bottom: 2px;  
+                                }
+
+                            }
+                            #panel {
+                                display: none;
+                                p {
+                                    border-bottom: 1px solid #e9e9e9;
+                                    font-size: 12px;
+                                    color: #525252;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                          }
+                         }
+                         .profile_other_image{
+                            border-radius: 5px;
+                            background: white;
+                            height: auto;
+                            padding-bottom: 10px;
+                            grid-area: 3;
+                            .profile_other_image_title{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 10px;
+                                p{
+                                    font-size: 11px;
+                                    margin-bottom: 0px;
+                                }
+                                .btnMore {
+                                    border: none;
+                                    padding: 0px;
+                                    background: none;
+                                    outline: none;
+                                    box-shadow: none;
+                                    font-size: 12px;
+                                }
+                            }
+                            .profile_other_image_photos{
+                                padding-left: 16px;
+                                min-height: 115px;
+                                .item{
+                                    display: inline-block;
+                                    padding: 2px;
+                                    width: 23%;
+                                    cursor: pointer;
+                                    margin-bottom: 4px;
+                                    img{
+                                        border-radius: 2px;
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                        .profile_title_news{
+                            height: auto;
+                            grid-area: 5;
+                            .profile_title_news_top{
+                                padding: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                   
+                                background: white;
+                                height: auto;
+                                padding-bottom: 10px;
+                                margin-top: 10px;
+                                p{
+                                    margin-bottom: 0px;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    color: #7e7272;
+                                }
+                            }
+                            .profile_title_news_bottom{
+                                .news{
+                                  
+                                    background: white;
+                                    height: auto;
+                                    padding-bottom: 10px;
+                                    margin-bottom: 10px;
+                                    .news_header{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        .news_profile{
+                                            padding: 10px 0px;                                           
+                                            display: inline-block;                                
+                                            .news_profile_image{
+                                                display: inline-block;
+                                                img {
+                                                    width: 35px;
+                                                    height: 35px;
+                                                    border-radius: 50%;
+                                                    
+                                                }
+                                            }
+                                            .news_profile_title{
+                                                display: inline-block;
+                                                vertical-align: middle;  
+                                                margin-left: 5px;                                  
+                                                a {
+                                                    font-size: 13px;
+                                                    font-weight: 600;
+                                                    display: inline-block;
+                                                    color: #3e7785;
+                                                    text-decoration: none;  
+                                                    
+                                                }
+                                                p {
+                                                    font-size: 11px;
+                                                    margin-bottom: 0px;
+                                                    color: gray;
+                                                }
+                                            }
+                                        }
+                                        .other_function{
+                                            .dropdown{
+                                                img{
+                                                    margin-top: 15px;
+                                                    cursor: pointer;
+                                                    width: 21px;
+                                                }
+                                                ul{
+                                                    position: absolute;
+                                                    transform: none !important;
+                                                    top: 35px !important;
+                                                    cursor: pointer;
+                                                    left: auto !important;
+                                                    right: -4px;
+                                                    will-change: transform;
+                                                    background: #ecf5fd;
+                                                    li{
+                                                        padding-left: 10px;
+                                                        padding-bottom: 10px;
+                                                        a{
+                                                            font-size: 13px;
+                                                            color: #55606c;
+                                                            font-weight: 600;
+                                                            text-decoration: none;
+                                                        }
+                                                        &:hover{
+                                                            background: #d9d9d9;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                    .news_title{
+                                        font-size: 13px;
+                                    }
+                                    .news_image{
+                                        padding-bottom: 6px;
+                                        cursor: pointer;
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .news_info{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        .like_comment{
+                                            width: 40px;
+                                            cursor: pointer;
+                                            img{
+                                                width: 18px;
+                                                margin-left: 3px;
+                                            }
+                                        }
+                                        .complaint{
+                                            a{
+                                                font-size: 12px;
+                                                color: #6f8ba6;
+                                                margin-right: 3px;
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                            
+                        }
+                   
+                  
+                  
+                }
+             }
+        }
+  }
+}
+@media screen and (max-width: 576px) {
+    .content_menu{
+        .profile_other_content{
+            padding-top: 30px !important;            
+           
+        }
+  }
+}
+
+@media screen and (max-width: 466px) {
+    .content_menu{
+        .profile_other_content{
+           .content_profile{
+               .profile_other{
+                   .profile_image{
+                    .full_image{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        display: inline;
+                        .profile_img{
+                            width: 40% !important;
+                          }
+                          a{
+                            display: inline-block;
+                            width: 38%;
+                            margin-left: 11px;
+                            cursor: pointer;
+                            position: absolute;
+                            top: 62% !important;
+                            left: 0;
+                            right: 0;
+                            font-size: 13px;
+                            font-weight: 600;
+                            color: #6f8ba6;
+                          }
+                          #upload{
+                              display:none;
+                          }
+                    }
+                   }
+               }
+           }
+        }
+  }
+}
+
+
+@media screen and (max-width: 356px) {
+    .content_menu{
+        .profile_other_content{
+           .content_profile{
+               .profile_other{
+                   .profile_image{
+                    .full_image{
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        display: inline;
+                        .profile_img{
+                            width: 40% !important;
+                          }
+                          a{
+                            display: inline-block;
+                            width: 38%;
+                            margin-left: 11px;
+                            cursor: pointer;
+                            position: absolute;
+                            top: 58% !important;
+                            left: 0;
+                            right: 0;
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #6f8ba6;
+                          }
+                          #upload{
+                              display:none;
+                          }
+                    }
+                   }
+               }
+           }
+        }
+  }
+}
